@@ -1,5 +1,5 @@
 ---
-title: "More colors"
+title: "CN-model"
 output: html_document
 ---
 
