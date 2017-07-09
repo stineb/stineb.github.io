@@ -4,8 +4,12 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Usage"
+      href: usage.html
     - text: "P-model"
       href: pmodel.html
     - text: "CN-model"
       href: cnmodel.html
+    - text: "Input / Output"
+      href: inputoutput.html
 output_dir: "."

@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
@@ -161,6 +164,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -179,10 +277,16 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
+  <a href="usage.html">Usage</a>
+</li>
+<li>
   <a href="pmodel.html">P-model</a>
 </li>
 <li>
   <a href="cnmodel.html">CN-model</a>
+</li>
+<li>
+  <a href="inputoutput.html">Input / Output</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -201,16 +305,6 @@ $(document).ready(function () {
 </div>
 
 
-<p>Base R comes with many functions for generating colors. The code below demonstrates the terrain.colors function.</p>
-<div id="terrain.colors" class="section level2">
-<h2>terrain.colors</h2>
-<div class="figure">
-<img src="cnmodel_files/figure-html/unnamed-chunk-2-1.png" alt="The Maunga Whau volcano." width="672" />
-<p class="caption">
-The Maunga Whau volcano.
-</p>
-</div>
-</div>
 <div id="photosynthesis" class="section level2">
 <h2>Photosynthesis</h2>
 <p>We simulate GPP (<span class="math inline">\(P\)</span>) using a light use efficiency model developed from first principles . The equations in Section  are also described by  and . Total canopy <span class="math inline">\(P\)</span> is <span class="math display">\[
@@ -220,7 +314,9 @@ P = \psi_P \; I_{\mathrm{abs}}
 I_{\mathrm{abs}} = I_0(1-e^{-kL})
 \label{eq:iabs}
 \]</span> <span class="math inline">\(I_0\)</span> is the light intensity at the top of the canopy, <span class="math inline">\(k\)</span> is the light extinction coefficient in the canopy, and <span class="math inline">\(L\)</span> is the leaf area index. <span class="math inline">\(\psi_P\)</span> is predicted by assuming the coordination hypothesis, which states that under typical daytime conditions, photosynthetic C assimilation operates at the point of co-limitation by the capacity of Rubisco for carboxylation of RuBP (<span class="math inline">\(A_c\)</span>) and the electron transport for RuBP regeneration (<span class="math inline">\(A_J\)</span>). Their functional forms are given by the Farquhar model Farquhar et al., 1980: <span class="math display">\[
-A_c = V_{\mathrm{cmax}} \; \frac{\chi - \gamma}{\chi + \kappa} \\
+A_c = V_{\mathrm{cmax}} \; \frac{\chi - \gamma}{\chi + \kappa}
+\]</span></p>
+<p><span class="math display">\[
 A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 \]</span> with <span class="math inline">\(\chi=c_i/c_a\)</span>, <span class="math inline">\(\gamma = \Gamma^{\ast}/c_a\)</span>, and <span class="math inline">\(\kappa = K/c_a\)</span>, where <span class="math inline">\(\varphi_0\)</span> is the quantum yield, <span class="math inline">\(c_i\)</span> and <span class="math inline">\(c_a\)</span> are the leaf-internal and ambient  concentrations, and <span class="math inline">\(\Gamma^{\ast}\)</span> is the  compensation point in the absence of dark respiration, calculated after  (see Appendix AXXX), and <span class="math inline">\(K\)</span> is the Michaelis-Menten coefficient of Rubisco.  is the maximum rate of Rubisco activity. Following the electron transport-limited case, <span class="math inline">\(I_{\mathrm{abs}}\)</span> can be interpreted as the total light absorbed by the canopy and the light use efficiency of photosynthesis is thus defined as: <span class="math display">\[
 \psi_P = \varphi_0  \frac{\chi - \gamma}{\chi + 2\gamma}
@@ -232,60 +328,52 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 \]</span> With <span class="math inline">\(\xi = \sqrt{\frac{\beta\;(K+\Gamma^{\ast})}{1.6\;\eta^{\ast}}}\)</span>. <span class="math inline">\(D\)</span> is estimated as the difference between saturated and actual vapour pressure. <span class="math inline">\(\beta\)</span> is a parameter for the ratio of the unit costs of carboxylation versus transpiration capacity  and is chosen based on observational data (Wang Han subm.). <span class="math inline">\(\eta^{\ast}=\eta/\eta_{25}\)</span> where <span class="math inline">\(\eta\)</span> is the viscosity of water and <span class="math inline">\(\eta_{25}\)</span> is viscosity at standard conditions (25<span class="math inline">\(^{\circ}\)</span>C and 1013.25 Pa) (see Appendix AXXX-AXXX for <span class="math inline">\(K\)</span>, <span class="math inline">\(D\)</span>, <span class="math inline">\(\eta\)</span> and <span class="math inline">\(\Gamma^{\ast}\)</span> as a function of environmental conditions). Equation  can thus be written as <span class="math display">\[
 \psi_P = \varphi_0 \; \frac{c_a - \Gamma^{\ast}}{c_a + 2\;\Gamma^{\ast} + 3\;\Gamma^{\ast}\;\sqrt{\frac{1.6\;D\;\eta^{\ast}}{\beta\left(K+\Gamma^{\ast}\right)}}}
 \]</span></p>
-<!-- \subsubsection{m-prime} -->
-<!-- Accounting for an upper limit of $A_J$ introduces a modification of $m$ in Eq.\ref{eq:gpp}: -->
-<!-- $$ -->
-<!-- m' = m\;\sqrt{1 - \frac{c^{2/3}}{m^{2/3}}} -->
-<!-- $$ -->
-<!-- with $c = 0.41$. -->
-<!-- \subsubsection{\vcmax\ and leaf respiration} -->
+<div id="m-prime" class="section level3">
+<h3>m-prime</h3>
+<p>Accounting for an upper limit of <span class="math inline">\(A_J\)</span> introduces a modification of <span class="math inline">\(m\)</span> in Eq.: <span class="math display">\[
+m&#39; = m\;\sqrt{1 - \frac{c^{2/3}}{m^{2/3}}}
+\]</span> with <span class="math inline">\(c = 0.41\)</span>.</p>
+</div>
+<div id="v_cmax-and-leaf-respiration" class="section level3">
+<h3>V<span class="math inline">\(_{cmax}\)</span> and leaf respiration</h3>
 <!-- \label{sec:vcmax} -->
-<!-- Consistent with the coordination hypothesis ($A_c=A_J$), \vcmax\ is  -->
-<!-- $$ -->
-<!-- V_{\mathrm{cmax}} = \varphi_0 \; I_{\mathrm{abs}} \; \frac{\chi + \kappa}{\chi + 2\gamma} -->
-<!-- \label{eq:vcmax} -->
-<!-- $$ -->
-<!-- This prediction of \vcmax\ holds only at time scales of multiple days to months. Therefore, $I_{\mathrm{abs}}$ represents typical daytime light conditions, implemented as the photon flux density, averaged over daylight seconds (PPFD, mol m$^{-2}$ s). We model total leaf respiration to be proportional to canopy-level \vcmax . -->
-<!-- $$ -->
-<!-- R_l = a_{\mathrm{R}} \; V_{\mathrm{cmax}}\;. -->
-<!-- $$ -->
-<!-- We can thus define a net light use efficiency $\psi_{Pn}$ so that $P-R_l = I_{\mathrm{abs}} \psi_{Pn}$ with  -->
-<!-- $$ -->
-<!-- \psi_{Pn} = \frac{\varphi_0}{\chi + 2\gamma}\left( \chi - \gamma - a_{\mathrm{R}} (\chi + \kappa)  \right)\;. -->
-<!-- \label{eq:luenet} -->
-<!-- $$ -->
-<!-- ## Canopy nitrogen and leaf traits} -->
+<p>Consistent with the coordination hypothesis (<span class="math inline">\(A_c=A_J\)</span>),  is <span class="math display">\[
+V_{\mathrm{cmax}} = \varphi_0 \; I_{\mathrm{abs}} \; \frac{\chi + \kappa}{\chi + 2\gamma}
+\label{eq:vcmax}
+\]</span> This prediction of  holds only at time scales of multiple days to months. Therefore, <span class="math inline">\(I_{\mathrm{abs}}\)</span> represents typical daytime light conditions, implemented as the photon flux density, averaged over daylight seconds (PPFD, mol m<span class="math inline">\(^{-2}\)</span> s). We model total leaf respiration to be proportional to canopy-level . <span class="math display">\[
+R_l = a_{\mathrm{R}} \; V_{\mathrm{cmax}}\;.
+\]</span> We can thus define a net light use efficiency <span class="math inline">\(\psi_{Pn}\)</span> so that <span class="math inline">\(P-R_l = I_{\mathrm{abs}} \psi_{Pn}\)</span> with <span class="math display">\[
+\psi_{Pn} = \frac{\varphi_0}{\chi + 2\gamma}\left( \chi - \gamma - a_{\mathrm{R}} (\chi + \kappa)  \right)\;.
+\label{eq:luenet}
+\]</span></p>
+</div>
+</div>
+<div id="canopy-nitrogen-and-leaf-traits" class="section level2">
+<h2>Canopy nitrogen and leaf traits</h2>
 <!-- \label{sec:canopyn} -->
-<!-- In brief, N in foliage is modelled as the sum of a metabolic fraction (N in Rubisco, $N_v$) and a structural fraction ($N_s$). $N_v$ follows from the prediction of $V_{cmax}$ (see Sect.\ref{sec:vcmax}) at standard temperature (25 K), termed $V_{cmax25}$. $N_s$ is modelled as a linear function of $N_v$ at the leaf-level. To distinguish quantities expressed at the leaf versus canopy level, we henceforth use superscripts $l$, and $v$, respectively, with $N^l=N^c/L$. LMA is calulated by multiplying $N_s$ with a PFT (species-) specific factor that relates canopy structural N to structural C. The equations are as follows. The total canopy N content per unit ground area (mol N m$^{-2}$) is -->
-<!-- $$ -->
-<!-- N^c = L\;(N_v^l + N_s^l)\;. -->
-<!-- \label{eq:canopynassum} -->
-<!-- $$ -->
-<!-- The N content per unit leaf area is therefore $N_{\mathrm{area}} = N^c/L = N^l = N_v^l + N_s^l$.  -->
-<!-- \subsubsection{Metabolic leaf N} -->
-<!-- The metabolic component of leaf nitrogen is proportional to $V_{c max 25}^c$ at the canopy level. We assume a monthly time-scale of acclimation and use the maximum monthly $V_{c max 25}$ for a given year with $I_{\mathrm{abs}}$ in units of mol m$^{-2}$ s$^{-1}$, averaged over the monthly daylight period. The canopy-level metabolic nitrogen content is  -->
-<!-- $$ -->
-<!-- N_v^c = n_v\; V_{cmax25}^c -->
-<!-- \label{eq:metabolicn} -->
-<!-- $$ -->
-<!-- $N_v^c$ is expressed in units of mol N m$^{-2}$-ground area. $V_{cmax25}$ is the maximum rate of Rubisco activity at standard temperature (25 K). This accounts for the effect that $V_{cmax}$ per unit metabolic leaf N is higher (lower) at temperatures above (below) 25 K, with: -->
-<!-- $$ -->
-<!-- V_{\mathrm{cmax25}} &= f_{25} V_{\mathrm{cmax}} \\ -->
-<!-- f_{25} &=  \exp( -\frac{\Delta H_V}{R}  \left( \frac{1}{298} - \frac{1}{T_K} \right) ) -->
-<!-- \label{eq:vcmax25} -->
-<!-- $$ -->
-<!-- where $\Delta H_V =$ 65330 J mol$^{-1}$ and $R=$ 8.3145 J mol$^{-1}$ K$^{-1}$. $n_v$ is in mol N s (mol CO$_2$)$^{-1}$ and specifies the amount of metabolic leaf N per unit $V_{\mathrm{cmax25}}$. $T_K$ is air temperature in Kelvin. Follwoing \citet{Harrison2009}, $n_v$ is 336.4 mol N s (mol CO$_2$)$^{-1}$ and can be decomposed into -->
-<!-- $$ -->
-<!-- n_v =  \frac{M_R\;[N_R]}{k_{\mathrm{cat}}\;n_R}. -->
-<!-- $$ -->
-<!-- $M_R$ is the molecular weight of Rubisco ($5.5\cdot 10^5$ gR (mol R$^{-1}$), $[N_R]$ is the N concentration in Rubisco ($1.14 \cdot 10^{-2}$ mol N (gR)$^{-1}$), $k_{\mathrm{cat}}$ is the catalytic turnover rate per site (3.5 mol CO$_2$ (mol R sites)$^{-1}$ s$^{-1}$). Following Harrison et al., 2009, we use a value of $k_{\mathrm{cat}}=2.33$ accounting for non-active Rubisco. $n_R$ is the number of catalytic sites per mol Rubisco, 8 mol R sites (mol R)$^{-1}$. -->
-<!-- \subsubsection{Structural leaf N} -->
-<!-- We assume a linear relationship between metabolic and structural N at the leaf-level.   -->
-<!-- $$ -->
-<!-- N_s^l = a_{\mathrm{fol}} + b_{\mathrm{fol}} \; N_v^l -->
-<!-- \label{eq:structuraln} -->
-<!-- $$ -->
-<!-- The parameter $b_{\mathrm{fol}}$ determines the minimum investment into structures as $N_v^l$ tends toward zero. This relationship is based on data of Hikosaka et al., 2009 (xxx update with better data!xxx).  -->
+<p>In brief, N in foliage is modelled as the sum of a metabolic fraction (N in Rubisco, <span class="math inline">\(N_v\)</span>) and a structural fraction (<span class="math inline">\(N_s\)</span>). <span class="math inline">\(N_v\)</span> follows from the prediction of <span class="math inline">\(V_{cmax}\)</span> (see Sect.) at standard temperature (25 K), termed <span class="math inline">\(V_{cmax25}\)</span>. <span class="math inline">\(N_s\)</span> is modelled as a linear function of <span class="math inline">\(N_v\)</span> at the leaf-level. To distinguish quantities expressed at the leaf versus canopy level, we henceforth use superscripts <span class="math inline">\(l\)</span>, and <span class="math inline">\(v\)</span>, respectively, with <span class="math inline">\(N^l=N^c/L\)</span>. LMA is calulated by multiplying <span class="math inline">\(N_s\)</span> with a PFT (species-) specific factor that relates canopy structural N to structural C. The equations are as follows. The total canopy N content per unit ground area (mol N m<span class="math inline">\(^{-2}\)</span>) is <span class="math display">\[
+N^c = L\;(N_v^l + N_s^l)\;.
+\label{eq:canopynassum}
+\]</span> The N content per unit leaf area is therefore <span class="math inline">\(N_{\mathrm{area}} = N^c/L = N^l = N_v^l + N_s^l\)</span>.</p>
+<div id="metabolic-leaf-n" class="section level3">
+<h3>Metabolic leaf N</h3>
+<p>The metabolic component of leaf nitrogen is proportional to <span class="math inline">\(V_{c max 25}^c\)</span> at the canopy level. We assume a monthly time-scale of acclimation and use the maximum monthly <span class="math inline">\(V_{c max 25}\)</span> for a given year with <span class="math inline">\(I_{\mathrm{abs}}\)</span> in units of mol m<span class="math inline">\(^{-2}\)</span> s<span class="math inline">\(^{-1}\)</span>, averaged over the monthly daylight period. The canopy-level metabolic nitrogen content is <span class="math display">\[
+N_v^c = n_v\; V_{cmax25}^c
+\label{eq:metabolicn}
+\]</span> <span class="math inline">\(N_v^c\)</span> is expressed in units of mol N m<span class="math inline">\(^{-2}\)</span>-ground area. <span class="math inline">\(V_{cmax25}\)</span> is the maximum rate of Rubisco activity at standard temperature (25 K). This accounts for the effect that <span class="math inline">\(V_{cmax}\)</span> per unit metabolic leaf N is higher (lower) at temperatures above (below) 25 K, with: <span class="math display">\[
+V_{\mathrm{cmax25}} = f_{25} V_{\mathrm{cmax}} \\
+f_{25} =  \exp( -\frac{\Delta H_V}{R}  \left( \frac{1}{298} - \frac{1}{T_K} \right) )
+\label{eq:vcmax25}
+\]</span> where <span class="math inline">\(\Delta H_V =\)</span> 65330 J mol<span class="math inline">\(^{-1}\)</span> and <span class="math inline">\(R=\)</span> 8.3145 J mol<span class="math inline">\(^{-1}\)</span> K<span class="math inline">\(^{-1}\)</span>. <span class="math inline">\(n_v\)</span> is in mol N s (mol CO<span class="math inline">\(_2\)</span>)<span class="math inline">\(^{-1}\)</span> and specifies the amount of metabolic leaf N per unit <span class="math inline">\(V_{\mathrm{cmax25}}\)</span>. <span class="math inline">\(T_K\)</span> is air temperature in Kelvin. Follwoing , <span class="math inline">\(n_v\)</span> is 336.4 mol N s (mol CO<span class="math inline">\(_2\)</span>)<span class="math inline">\(^{-1}\)</span> and can be decomposed into <span class="math display">\[
+n_v =  \frac{M_R\;[N_R]}{k_{\mathrm{cat}}\;n_R}.
+\]</span> <span class="math inline">\(M_R\)</span> is the molecular weight of Rubisco (<span class="math inline">\(5.5\cdot 10^5\)</span> gR (mol R<span class="math inline">\(^{-1}\)</span>), <span class="math inline">\([N_R]\)</span> is the N concentration in Rubisco (<span class="math inline">\(1.14 \cdot 10^{-2}\)</span> mol N (gR)<span class="math inline">\(^{-1}\)</span>), <span class="math inline">\(k_{\mathrm{cat}}\)</span> is the catalytic turnover rate per site (3.5 mol CO<span class="math inline">\(_2\)</span> (mol R sites)<span class="math inline">\(^{-1}\)</span> s<span class="math inline">\(^{-1}\)</span>). Following Harrison et al., 2009, we use a value of <span class="math inline">\(k_{\mathrm{cat}}=2.33\)</span> accounting for non-active Rubisco. <span class="math inline">\(n_R\)</span> is the number of catalytic sites per mol Rubisco, 8 mol R sites (mol R)<span class="math inline">\(^{-1}\)</span>.</p>
+</div>
+<div id="structural-leaf-n" class="section level3">
+<h3>Structural leaf N</h3>
+<p>We assume a linear relationship between metabolic and structural N at the leaf-level. <span class="math display">\[
+N_s^l = a_{\mathrm{fol}} + b_{\mathrm{fol}} \; N_v^l
+\label{eq:structuraln}
+\]</span> The parameter <span class="math inline">\(b_{\mathrm{fol}}\)</span> determines the minimum investment into structures as <span class="math inline">\(N_v^l\)</span> tends toward zero. This relationship is based on data of Hikosaka et al., 2009 (xxx update with better data!xxx).</p>
 <!-- \begin{figure}[ht!] -->
 <!-- \begin{center} -->
 <!--  \includegraphics[width=0.5\mathrmwidth]{fig/Narea_vs_RubiscoN.pdf} -->
@@ -293,48 +381,38 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!--  \label{fig:narea} -->
 <!-- \end{center} -->
 <!-- \end{figure} -->
-<!-- \subsubsection{LMA} -->
-<!-- We assume a constant ratio of leaf C to structural N which may vary between PFTs. At the leaf-level, the C content per unit leaf area is -->
-<!-- $$ -->
-<!-- C^l = c_{\mathrm{fol}}\;N_s^l -->
-<!-- \label{eq:leafc} -->
-<!-- $$ -->
-<!-- Taken together, these relationships imply a declining LMA (taken as $2.0 \cdot C^l$) with increasing LAI and an increasing leaf C:N ratio with decreasing metabolic N. While the total metabolic N component is proportional to $V_{c max 25}$ at the canopy-level and thus reaches an asymptote with increasing LAI, the minimum amount of N needed for foliage tissue always implies a non-zero cost for adding more leaves. The N content per unit leaf mass is therefore $N_{\mathrm{mass}} = N^c/C^c = N^l/C^l = (N_s^l + N_v^l)/c_{\mathrm{fol}} N_s^l.$ -->
-<!-- %This is illustrated in Figure \ref{fig:comphiko}. These relationships are consistent with observations that suggest that within the canopy, LMA varies with depth, more-or-less paralleling $V_{c max 25}$. As a result, leaf C:N ratio is almost invariant between the upper and lower leaves. -->
-<!-- \subsubsection{Functions for the allocation algorithm} -->
-<!-- The following equations are derived from relationships described above and are implemented in the model to simulate the non-linear relationships between foliage C, N and $L$. This is illustrated in Fig.\ref{fig:leafcn}. By combining Equations \ref{eq:vcmax}, \ref{eq:metabolicn}, and \ref{eq:vcmax25}, total canopy metabolic N can be written as a function of absorbed light $N_v^c = n_v^{\ast}\;I_{\mathrm{abs}}$ with  -->
-<!-- $$ -->
-<!-- n_v^{\ast} = f_{25}\;\varphi_0\;\frac{\chi+\kappa}{\chi+2\gamma}\;n_v -->
-<!-- \label{eq:nvstar} -->
-<!-- $$ -->
-<!-- This quantity follows from the predictions of photosynthesis, given VPD, temperature, \coo , and light conditions, and is calculated at the beginning of each simulation year for each month's average conditions, given as model input. We further assume that the metabolic leaf N predicted here represents a potential maximum, achievable by re-activation of temporally deactivated Rubisco. Thus we use the annual maximum of monthly $n_v^{\ast}$ values for the allocation algorithm. By combining equations \ref{eq:iabs}, \ref{eq:canopynassum}, \ref{eq:structuraln}, and \ref{eq:nvstar}, total canopy N is thus -->
-<!-- $$ -->
-<!-- N^c = M_N \left(  I_0\;n_v^{\ast}\;(1+b_{\mathrm{fol}})(1-e^{-kL}) +  a_{\mathrm{fol}}L \right)\;. -->
-<!-- \label{eq:canopyn} -->
-<!-- $$ -->
-<!-- $M_N$ is the molecular weight of nitrogen (14.0067 gN (mol N)$^{-1}$). Using Eq.\ref{eq:leafc}, the total foliage C can be calculated analogously: -->
-<!-- $$ -->
-<!-- C^c = c_{\mathrm{fol}} M_c \left( I_0\;n_v^{\ast}\;b_{\mathrm{fol}}\;(1-e^{-kL}) +  a_{\mathrm{fol}}\;L \right) -->
-<!-- \label{eq:canopyc} -->
-<!-- $$ -->
-<!-- When a plant starts growing, i.e. for small $L$ and $(1-e^{-kL})\simeq k$, the initial foliage C:N ratio can be derived by a Taylor approximation of Eq. \ref{eq:canopyc} divided by Eq.  \ref{eq:canopyn}: -->
-<!-- $$ -->
-<!-- r_{\mathrm{C:N}}^0 = \frac{c_{\mathrm{fol}}\;M_C(I_0\;n_v^{\ast}\;k\;b_{\mathrm{fol}} + a_{\mathrm{fol}})}{M_N(I_0 \;n_v^{\ast} \;k  (b_{\mathrm{fol}}+1) + a_{\mathrm{fol}} )} -->
-<!-- $$ -->
-<!-- Furthermore, in the model, $L$ needs to be calculated as a function of $C^c$. However, solving Eq.\ref{eq:canopyc} for $L$ leads to a transcendental equation of the form -->
-<!-- $$ -->
-<!-- \alpha(1-e^{-kL}) + \beta L - \gamma = 0 -->
-<!-- \label{eq:form} -->
-<!-- $$ -->
-<!-- with $\alpha = I_0 \; n_v^{\ast} \; b_{\mathrm{fol}}$, $\beta = a_{\mathrm{fol}}$, and $\gamma = c_{\mathrm{fol}}^{-1} M_C^{-1} C^c$. The solution of this equation requires the Lambert-W function $W$: -->
-<!-- $$ -->
-<!-- L = \frac{1}{\beta k} \left(  -->
-<!-- -\alpha k + \gamma k + \beta \; -->
-<!-- W \left[ \frac{\alpha k}{\beta} \exp( \frac{(\alpha - \gamma)k}{\beta} ) \right] -->
-<!--   \right) -->
-<!--   \label{eq:lambertlai} -->
-<!-- $$ -->
-<!-- We apply the TOMS743 algorithm xxx -->
+</div>
+<div id="lma" class="section level3">
+<h3>LMA</h3>
+<p>We assume a constant ratio of leaf C to structural N which may vary between PFTs. At the leaf-level, the C content per unit leaf area is <span class="math display">\[
+C^l = c_{\mathrm{fol}}\;N_s^l
+\label{eq:leafc}
+\]</span> Taken together, these relationships imply a declining LMA (taken as <span class="math inline">\(2.0 \cdot C^l\)</span>) with increasing LAI and an increasing leaf C:N ratio with decreasing metabolic N. While the total metabolic N component is proportional to <span class="math inline">\(V_{c max 25}\)</span> at the canopy-level and thus reaches an asymptote with increasing LAI, the minimum amount of N needed for foliage tissue always implies a non-zero cost for adding more leaves. The N content per unit leaf mass is therefore <span class="math inline">\(N_{\mathrm{mass}} = N^c/C^c = N^l/C^l = (N_s^l + N_v^l)/c_{\mathrm{fol}} N_s^l.\)</span></p>
+<p>%This is illustrated in Figure . These relationships are consistent with observations that suggest that within the canopy, LMA varies with depth, more-or-less paralleling <span class="math inline">\(V_{c max 25}\)</span>. As a result, leaf C:N ratio is almost invariant between the upper and lower leaves.</p>
+</div>
+<div id="functions-for-the-allocation-algorithm" class="section level3">
+<h3>Functions for the allocation algorithm</h3>
+<p>The following equations are derived from relationships described above and are implemented in the model to simulate the non-linear relationships between foliage C, N and <span class="math inline">\(L\)</span>. This is illustrated in Fig.. By combining Equations , , and , total canopy metabolic N can be written as a function of absorbed light <span class="math inline">\(N_v^c = n_v^{\ast}\;I_{\mathrm{abs}}\)</span> with <span class="math display">\[
+n_v^{\ast} = f_{25}\;\varphi_0\;\frac{\chi+\kappa}{\chi+2\gamma}\;n_v
+\label{eq:nvstar}
+\]</span> This quantity follows from the predictions of photosynthesis, given VPD, temperature, , and light conditions, and is calculated at the beginning of each simulation year for each month’s average conditions, given as model input. We further assume that the metabolic leaf N predicted here represents a potential maximum, achievable by re-activation of temporally deactivated Rubisco. Thus we use the annual maximum of monthly <span class="math inline">\(n_v^{\ast}\)</span> values for the allocation algorithm. By combining equations , , , and , total canopy N is thus <span class="math display">\[
+N^c = M_N \left(  I_0\;n_v^{\ast}\;(1+b_{\mathrm{fol}})(1-e^{-kL}) +  a_{\mathrm{fol}}L \right)\;.
+\label{eq:canopyn}
+\]</span> <span class="math inline">\(M_N\)</span> is the molecular weight of nitrogen (14.0067 gN (mol N)<span class="math inline">\(^{-1}\)</span>). Using Eq., the total foliage C can be calculated analogously: <span class="math display">\[
+C^c = c_{\mathrm{fol}} M_c \left( I_0\;n_v^{\ast}\;b_{\mathrm{fol}}\;(1-e^{-kL}) +  a_{\mathrm{fol}}\;L \right)
+\label{eq:canopyc}
+\]</span> When a plant starts growing, i.e. for small <span class="math inline">\(L\)</span> and <span class="math inline">\((1-e^{-kL})\simeq k\)</span>, the initial foliage C:N ratio can be derived by a Taylor approximation of Eq.  divided by Eq. : <span class="math display">\[
+r_{\mathrm{C:N}}^0 = \frac{c_{\mathrm{fol}}\;M_C(I_0\;n_v^{\ast}\;k\;b_{\mathrm{fol}} + a_{\mathrm{fol}})}{M_N(I_0 \;n_v^{\ast} \;k  (b_{\mathrm{fol}}+1) + a_{\mathrm{fol}} )}
+\]</span> Furthermore, in the model, <span class="math inline">\(L\)</span> needs to be calculated as a function of <span class="math inline">\(C^c\)</span>. However, solving Eq. for <span class="math inline">\(L\)</span> leads to a transcendental equation of the form <span class="math display">\[
+\alpha(1-e^{-kL}) + \beta L - \gamma = 0
+\label{eq:form}
+\]</span> with <span class="math inline">\(\alpha = I_0 \; n_v^{\ast} \; b_{\mathrm{fol}}\)</span>, <span class="math inline">\(\beta = a_{\mathrm{fol}}\)</span>, and <span class="math inline">\(\gamma = c_{\mathrm{fol}}^{-1} M_C^{-1} C^c\)</span>. The solution of this equation requires the Lambert-W function <span class="math inline">\(W\)</span>: <span class="math display">\[
+L = \frac{1}{\beta k} \left(
+-\alpha k + \gamma k + \beta \;
+W \left[ \frac{\alpha k}{\beta} \exp( \frac{(\alpha - \gamma)k}{\beta} ) \right]
+  \right)
+  \label{eq:lambertlai}
+\]</span> We apply the TOMS743 algorithm xxx</p>
 <!-- \begin{figure}[ht!] -->
 <!-- \begin{center} -->
 <!--  \includegraphics[width=0.5\mathrmwidth]{fig/lai_vs_leafc.pdf} -->
@@ -342,11 +420,11 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!--  \label{fig:leafcn} -->
 <!-- \end{center} -->
 <!-- \end{figure} -->
-<!-- %Considering extreme values, Eq. \ref{eq:canopyc} can be solved for $L$:  -->
+<!-- %Considering extreme values, Eq. \ref{eq:canopyc} can be solved for $L$: -->
 <!-- %$$ -->
 <!-- %\lim_{L \to \infty} C^c(L) = c_{\mathrm{fol}}\;M_C(I_0\;n_v\;b_{\mathrm{fol}} + a_{\mathrm{fol}}\;L) -->
 <!-- %$$ -->
-<!-- %and  -->
+<!-- %and -->
 <!-- %$$ -->
 <!-- %\lim_{L \to 0} C^c(L) = c_{\mathrm{fol}}\;M_C\;a_{\mathrm{fol}}\;L -->
 <!-- %$$ -->
@@ -369,11 +447,11 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- %$$ -->
 <!-- %a(z) = I_{\mathrm{abs}}(z)\;\Phi_0\;\frac{\chi-\gamma}{\chi+2\gamma} -->
 <!-- %$$ -->
-<!-- %Total canopy $V_{c max}$ is therefore  -->
+<!-- %Total canopy $V_{c max}$ is therefore -->
 <!-- %$$ -->
 <!-- %V_{c max} = \int_0^{H} v_{c max}(z)\;dz = \Phi_0\;\frac{\chi+\kappa}{\chi+2\gamma}\int_0^{H} I_{\mathrm{abs}}(z)\;dz -->
 <!-- %$$ -->
-<!-- %With $I_{\mathrm{abs}}(z)=\frac{dI(z)}{dz}=kl\;I(z)$ (Eq.\ref{eq:lightex}) and $I(z)=I_0\;e^{-klz}$ (\ref{eq:light}) and $lH=L$ (uniform leaf distribution across canopy), total canopy $V_{c max}$ is  -->
+<!-- %With $I_{\mathrm{abs}}(z)=\frac{dI(z)}{dz}=kl\;I(z)$ (Eq.\ref{eq:lightex}) and $I(z)=I_0\;e^{-klz}$ (\ref{eq:light}) and $lH=L$ (uniform leaf distribution across canopy), total canopy $V_{c max}$ is -->
 <!-- %$$ -->
 <!-- %V_{c max} = I_0\;(1 - e^{-kL})\;\Phi_0\;\frac{\chi+\kappa}{\chi+2\gamma} -->
 <!-- %$$ -->
@@ -388,21 +466,17 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- %with $\int_0^Hl(z)\;dz=L$ and $H$ being the total canopy depth. -->
 <!-- % -->
 <!-- % -->
-<!-- ## Nitrogen uptake} -->
-<!-- \label{sec:nup} -->
-<!-- We assume that N uptake, \nup , comes at a C cost \cex , i.e. an additional respiration term that reduces the amount of C allocatable for new growth. \cex\ generally represents C delivered to and consumed by energy-consuming processes responsible for the acquisition and processing of N from the soil (reduction of \nooo , C export to mycorrhizae, C exudation into the rhizosphere). The instantaneous N uptake efficiency $\psi_N$ is proportional to N availability \nav : -->
-<!-- $$ -->
-<!-- \pdv{N_{\mathrm{up}}}{C_{\mathrm{ex}}} =  \psi_N \; N_{\mathrm{av}} -->
-<!-- $$ -->
-<!-- We further assume that $\partial$\nav $=-\partial$\nup\ and that \cex\ is independent of \nav . The model is solved for discrete time steps (daily), with net mineralisation and N uptake being calculated sequentially (see Sec.\ref{sec:algo}). Therefore, for a given initial amount of available N, \navo , the total daily \nup\ is -->
-<!-- $$ -->
-<!-- N_{\mathrm{up}} = N_{0}\;(1-\exp(-\psi_N\;C_{\mathrm{ex}})) -->
-<!-- $$ -->
-<!-- \cex\ is a function of root mass, $C_r$. Here, we assume a proportional relationship between $C_r$ and \cex: -->
-<!-- $$ -->
-<!-- C_{\mathrm{ex}} = \varphi \; C_r -->
-<!-- $$ -->
-<!-- Taken together, \nup\ is a saturating function of $C_r$ with $\lim_{C_r \to \infty} N_{\mathrm{up}} = N_0$, whereby the uptake efficiency parameter $\psi$ determines the depletion rate of \nav\ for a given \cex\ and the slope of the curve \nup $(C_r)$ for $C_r \to 0$ (see Fig.\ref{fig:nup}). The instantaneous uptake efficiency in turn declines with increasing \cex\ as \nav\ gets progressively depleted and it attains 0 for \cex $ \to \infty$. The formulation \nup\ chosen here differs from other formulations (xxx refs) in that the \mathrmit{fraction} of \nav\ is limited by root mass, but its absolute magnitude is not. The daily amount of \nup\ scales proportionally with \navo . Using root mass for determining \cex\ and not root surface area is a simplification and avoids the requirement of an additional parameter representing root mass-specific surface area. -->
+</div>
+</div>
+<div id="nitrogen-uptake" class="section level2">
+<h2>Nitrogen uptake</h2>
+<p> We assume that N uptake, , comes at a C cost , i.e. an additional respiration term that reduces the amount of C allocatable for new growth.  generally represents C delivered to and consumed by energy-consuming processes responsible for the acquisition and processing of N from the soil (reduction of , C export to mycorrhizae, C exudation into the rhizosphere). The instantaneous N uptake efficiency <span class="math inline">\(\psi_N\)</span> is proportional to N availability : <span class="math display">\[
+\frac{\partial N_{\mathrm{up}}}{\partial C_{\mathrm{ex}}} =  \psi_N \; N_{\mathrm{av}}
+\]</span> We further assume that <span class="math inline">\(\partial\)</span><span class="math inline">\(=-\partial\)</span> and that  is independent of . The model is solved for discrete time steps (daily), with net mineralisation and N uptake being calculated sequentially (see Sec.). Therefore, for a given initial amount of available N, , the total daily  is <span class="math display">\[
+N_{\mathrm{up}} = N_{0}\;(1-\exp(-\psi_N\;C_{\mathrm{ex}}))
+\]</span>  is a function of root mass, <span class="math inline">\(C_r\)</span>. Here, we assume a proportional relationship between <span class="math inline">\(C_r\)</span> and : <span class="math display">\[
+C_{\mathrm{ex}} = \varphi \; C_r
+\]</span> Taken together,  is a saturating function of <span class="math inline">\(C_r\)</span> with <span class="math inline">\(\lim_{C_r \to \infty} N_{\mathrm{up}} = N_0\)</span>, whereby the uptake efficiency parameter <span class="math inline">\(\psi\)</span> determines the depletion rate of  for a given  and the slope of the curve <span class="math inline">\((C_r)\)</span> for <span class="math inline">\(C_r \to 0\)</span> (see Fig.). The instantaneous uptake efficiency in turn declines with increasing  as  gets progressively depleted and it attains 0 for $ $. The formulation  chosen here differs from other formulations (xxx refs) in that the  of  is limited by root mass, but its absolute magnitude is not. The daily amount of  scales proportionally with . Using root mass for determining  and not root surface area is a simplification and avoids the requirement of an additional parameter representing root mass-specific surface area.</p>
 <!-- \begin{figure}[ht!] -->
 <!-- \begin{center} -->
 <!--  \includegraphics[width=0.6\mathrmwidth]{fig/plot_nup_cex.pdf} -->
@@ -410,26 +484,19 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!--  \label{fig:nup} -->
 <!-- \end{center} -->
 <!-- \end{figure} -->
-<!-- \subsubsection{N fixation} -->
-<!-- \label{sec:nfix} -->
-<!-- The amount of N acquired through symbiotic biological N fixation (BNF), \nfix (gN d$^{-1}$), is simulated for respective PFTs by accounting for the relative efficiency of N uptake from the soil versus the efficiency of BNF. As for N uptake from the soil, N acquired by BNF comes at a C cost (\cexfix ). In contrast, the  efficiency of N acquisition by BNF ($\psi_{\mathrm{fix}}$) is independent of \nav\ in the soil (infinite atmospheric N$_2$ pool) but is simulated as a function of soil temperature. -->
-<!-- $$ -->
-<!--   \psi_{\mathrm{fix}} = \pdv{N_{\mathrm{fix}}}{C_{\mathrm{ex}}^{\mathrm{fix}}} =  \psi_{\mathrm{fix}}^{\mathrm{max}}\cdot 1.25 \cdot\exp(a_{\mathrm{fix}} + b_{\mathrm{fix}}\;T_{\mathrm{soil}}\;(1 - 0.5\;\frac{T_{\mathrm{soil}}}{T_{\mathrm{fix}}^{\mathrm{opt}}} )) -->
-<!-- $$ -->
-<!-- This is a bell-shaped function with a maximum at $T_{\mathrm{fix}}^{\mathrm{opt}}=25.15$\degc\ and asymptotically declines to zero for low and high temperatures. We assume here that the functional form of $\psi_{\mathrm{fix}}$  is identical to the fitted relationship between observed nitrogenase activity and soil temperature given by  \citet{Houlton2008}. The factor 1.25 is introduced to normalise the function to vary between zero and $\psi_{\mathrm{fix}}^{\mathrm{max}}$. The latter is given by the inverse of the minimum cost of N fixation (4.8 gC/gN), found by \citet{Gutschick1981}. In contrast to other models (ref Houlton08, Wang 09, ...), we introduce a temperature dependence of N fixation efficiency here to account for the apparently strong inhibition of nitrogenase activity at low temperatures.  -->
-<!-- In each time step, \cex\ can be spent to acquire N by soil uptake and BNF. Their relative shares is found by finding the maximum N return on \cex\ investment, i.e. \cex\ is spent on soil uptake until a point is reached where soil uptake efficiency falls below the efficiency of BNF at the given soil temperature. This threshold efficiency is given by -->
-<!-- $$ -->
-<!-- \psi^{\ast} = \pdv{N_{\mathrm{up}}}{C_{\mathrm{ex}}} \Bigr|_{C_{\mathrm{ex}}=C_{\mathrm{ex}}^{\ast}} = \psi_{\mathrm{fix}} -->
-<!-- $$ -->
-<!-- The amount of C expended for soil uptake can then be calculated as  -->
-<!-- $$ -->
-<!-- C_{\mathrm{ex}}^{\ast} = - 1 / \psi\;\ln( \frac{\psi_{\mathrm{fix}}}{\psi} )\;, -->
-<!-- $$ -->
-<!-- and total amount of N taken up from the soil plus BNF is -->
-<!-- $$ -->
-<!-- N_{\mathrm{up}} = N_{0}\;(1-\exp(-\psi\;C_{\mathrm{ex}}^{\ast})) + \psi_{\mathrm{fix}} ( C_{\mathrm{ex}} - C_{\mathrm{ex}}^{\ast} )\;. -->
-<!-- \label{eq:nuptot} -->
-<!-- $$ -->
+<div id="n-fixation" class="section level3">
+<h3>N fixation</h3>
+<p> The amount of N acquired through symbiotic biological N fixation (BNF), (gN d<span class="math inline">\(^{-1}\)</span>), is simulated for respective PFTs by accounting for the relative efficiency of N uptake from the soil versus the efficiency of BNF. As for N uptake from the soil, N acquired by BNF comes at a C cost (). In contrast, the efficiency of N acquisition by BNF (<span class="math inline">\(\psi_{\mathrm{fix}}\)</span>) is independent of  in the soil (infinite atmospheric N<span class="math inline">\(_2\)</span> pool) but is simulated as a function of soil temperature. <span class="math display">\[
+  \psi_{\mathrm{fix}} = \frac{\partial N_{\mathrm{fix}}}{\partial C_{\mathrm{ex}}^{\mathrm{fix}}} =  \psi_{\mathrm{fix}}^{\mathrm{max}}\cdot 1.25 \cdot\exp(a_{\mathrm{fix}} + b_{\mathrm{fix}}\;T_{\mathrm{soil}}\;(1 - 0.5\;\frac{T_{\mathrm{soil}}}{T_{\mathrm{fix}}^{\mathrm{opt}}} ))
+\]</span> This is a bell-shaped function with a maximum at <span class="math inline">\(T_{\mathrm{fix}}^{\mathrm{opt}}=25.15\)</span> and asymptotically declines to zero for low and high temperatures. We assume here that the functional form of <span class="math inline">\(\psi_{\mathrm{fix}}\)</span> is identical to the fitted relationship between observed nitrogenase activity and soil temperature given by . The factor 1.25 is introduced to normalise the function to vary between zero and <span class="math inline">\(\psi_{\mathrm{fix}}^{\mathrm{max}}\)</span>. The latter is given by the inverse of the minimum cost of N fixation (4.8 gC/gN), found by . In contrast to other models (ref Houlton08, Wang 09, …), we introduce a temperature dependence of N fixation efficiency here to account for the apparently strong inhibition of nitrogenase activity at low temperatures.</p>
+<p>In each time step,  can be spent to acquire N by soil uptake and BNF. Their relative shares is found by finding the maximum N return on  investment, i.e.  is spent on soil uptake until a point is reached where soil uptake efficiency falls below the efficiency of BNF at the given soil temperature. This threshold efficiency is given by <span class="math display">\[
+\psi^{\ast} = \pdv{N_{\mathrm{up}}}{C_{\mathrm{ex}}} \Bigr|_{C_{\mathrm{ex}}=C_{\mathrm{ex}}^{\ast}} = \psi_{\mathrm{fix}}
+\]</span> The amount of C expended for soil uptake can then be calculated as <span class="math display">\[
+C_{\mathrm{ex}}^{\ast} = - 1 / \psi\;\ln( \frac{\psi_{\mathrm{fix}}}{\psi} )\;,
+\]</span> and total amount of N taken up from the soil plus BNF is <span class="math display">\[
+N_{\mathrm{up}} = N_{0}\;(1-\exp(-\psi\;C_{\mathrm{ex}}^{\ast})) + \psi_{\mathrm{fix}} ( C_{\mathrm{ex}} - C_{\mathrm{ex}}^{\ast} )\;.
+\label{eq:nuptot}
+\]</span></p>
 <!-- \begin{table} -->
 <!--  \caption{Model parameters.} -->
 <!-- \begin{tabular}{llll} -->
@@ -476,7 +543,7 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- \end{tabular} -->
 <!-- \label{tab:params} -->
 <!-- \end{table} -->
-<!-- %\subsubsection{New formulation of Nitrogen uptake} -->
+<!-- %###New formulation of Nitrogen uptake} -->
 <!-- %Nitrogen uptake ($N_{\mathrm{up}}$, gN m$^-2$d$^-1$) is modelled following Michaelis-Mentent uptake kinetics: -->
 <!-- %$$ -->
 <!-- %N_{\mathrm{up}} = \frac{V_N\;N_i}{K_N + N_i}  -->
@@ -505,7 +572,7 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- \label{eq:impl_criterium} -->
 <!-- $$ -->
 <!-- Given $N_0$, $\psi_{Pn}$, the current biomass in leaves and roots $P_{l,0}, P_{r,0}$, and the total allocatable C and N ($\Delta C=\Delta C_l + \Delta C_r$ and $\Delta N=\Delta N_l + \Delta N_r$), the amount of C allocated to leaves $\Delta C_l$ can thus be derived analytically by combining Eqs. \ref{eq:pmod0}, \ref{eq:canopyn}, \ref{eq:lambertlai}, and \ref{eq:nuptot}. The solution of Eq. \ref{eq:impl_criterium} is derived in the model by a numerical search algorithm (Zeroin), where $\Delta C_l$ is varied between 0 and $\Delta C$. This implementation allows for flexibility in formulating individual functions determining $P$, $N_{\mathrm{up}}$, etc.  -->
-<!-- \subsubsection{Summary of equations} -->
+<!-- ###Summary of equations} -->
 <!-- Below, we describe the mathematical problem of solving Eq. \ref{eq:impl_criterium} for $\Delta C_l$. The following equations are described above but are listed here again for clarification. The net light use efficiency $\psi_{Pn}$ and the N uptake efficiency $\psi_N$ and the incident light $I_0$ and initial available N $N_0$ are given in each time step where Eq. \ref{eq:impl_criterium} is solved. The initial leaf and root C and N ($C_{l0}$, $C_{r0}$, $N_{l0}$, and $N_{r0}$) and non-structural stored C and N ($C_{\mathrm{labl}}$ and $N_{\mathrm{labl}}$) are given as well. To solve is  -->
 <!-- \begin{equation*} -->
 <!-- y \frac{(P-R_l-R_r-C_{\mathrm{ex}}+C_{\mathrm{labl}})}{N_{\mathrm{up}}+N_{\mathrm{labl}}} = \frac{\Delta C_l + \Delta C_r}{\Delta N_l + \Delta N_r}\;. -->
@@ -560,7 +627,7 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- f_T &= \exp( 308.56 \cdot ( \frac{1}{T_0} - \frac{1}{T + 46.02}) ) -->
 <!-- \label{eq:lloydtaylor} -->
 <!-- $$ -->
-<!-- \subsubsection{C dynamics} -->
+<!-- ###C dynamics} -->
 <!-- The fates of decomposed litter C are determined by the C use efficiency of the litter-to-SOM transfer ($e_{\mathrm{C}}$) and the diversion fractions ($f_{\mathrm{sfs}}, 1-f_{\mathrm{sfs}}$) to two SOM pools ($P_{\mathrm{ssl}}, P_{\mathrm{sfs}}$) with different turnover times ($k_{\mathrm{ssl}}, k_{\mathrm{sfs}}$): -->
 <!-- $$ -->
 <!-- I_{C,\mathrm{sfs}} &= e_C\;f_{\mathrm{sfs}}\;\sum_i \Delta C_i \\ -->
@@ -575,7 +642,7 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- e_C = r_{\mathrm{CR}} / r_B\;. -->
 <!-- $$ -->
 <!-- $r_L$ depends on the stoichiometry of plant tissue in different compartments (see Sec. \ref{sec:xxx}), N resorption efficiencies (see Sec. \ref{sec:turnover}), and relative shares of individual compartments to litter formation. $r_B$ represents the decomposers' N:C ratio and is a taken as a constant here (see Tab. \ref{tab:params}).  -->
-<!-- \subsubsection{Net N mineralisation} -->
+<!-- ###Net N mineralisation} -->
 <!-- Litter and soil gross and net N mineralisation is determined by the N content in decomposing litter and the C use efficiency and C:N ratio of decomposers. The model implemented here is schematically illustrated in Fig. \ref{fig:netmin}. Litter gross N mineralisation can be written as -->
 <!-- $$ -->
 <!-- N_{l,\mathrm{min}}^{\mathrm{gross}} = \sum_i \Delta N_i = \sum_i r_{L,i} \Delta C_i  \equiv r_L\;D -->
@@ -616,7 +683,7 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- N_{\mathrm{up}}^i = N_{\mathrm{up}} \frac{N_i}{\mathrm{NH}_4 + \mathrm{NO}_3} -->
 <!-- $$ -->
 <!-- where $N_i$ is any of \nooo\ or \nhhhh .  -->
-<!-- \subsubsection{Nitrification} -->
+<!-- ###Nitrification} -->
 <!-- Mineralised N becomes available in the form of \nhhhh\ and is added to the inorganic soil \nhhhh\ pool where a fraction $f_{\mathrm{ae}}$ is subject to nitrification. The nitrification rate $F_{\mathrm{nitr}}$ is calculated as a function of temperature $f_T$ and subject to soil oxygen conditions that determine partitioning of NH$_4$ into aerobic and anaerobic microsites. Nitrification occurs only in aerobic microsites $f_{\mathrm{ae}}$. -->
 <!-- $$ -->
 <!-- \Delta \mathrm{NH}_4 &= N_{\mathrm{min}}^{\mathrm{net}} - F_{\mathrm{nitr}} - N_{\mathrm{up}}^{\mathrm{NH}_4}\\ -->
@@ -633,7 +700,7 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!--  \Delta \mathrm{N}_2\mathrm{O} &= c_{\mathrm{nitr}} \; (F_{\mathrm{nitr}} - \Delta \mathrm{NO}) -->
 <!-- $$ -->
 <!-- $F_{\mathrm{denitr}}$ is the denitrification flux, defined in Sec.\ref{sec:denitr}. -->
-<!-- \subsubsection{Denitrification} -->
+<!-- ###Denitrification} -->
 <!-- \label{sec:denitr} -->
 <!-- \nooo\ is subject to leaching (see Sect.\ref{sec:leach}) and denitrification, which is simulated as a reduction sequence NO$_3\to$NO$_2\to$N$_2$. \nno\ and NO are produced as side-products during the second step. The denitrification rate $F_{\mathrm{denitr}}$ is simulated as a Michaelis-Menten function $f_{\mathrm{DOC}}$ of soil dissolved organic C under anaerobic conditions as a substrate for denitrification and a second Michaelis-Menten function of \nooo\ under anaerobic conditions. -->
 <!-- $$ -->
@@ -655,7 +722,7 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- \Delta \mathrm{N}_2 &= F_{\mathrm{N}_2} - \Delta \mathrm{N}_2\mathrm{O}  - \Delta \mathrm{NO} -->
 <!-- $$ -->
 <!-- Total gaseous N loss is the sum of gaseous N produced $\Delta \mathrm{N}_2\mathrm{O} + \Delta \mathrm{NO} + \Delta \mathrm{N}_2 $.  -->
-<!-- \subsubsection{Ammonium volatilisation} -->
+<!-- ###Ammonium volatilisation} -->
 <!-- Ammonium in the soil solution is modelled as a function of soil pH and is proportional to the NH$_4$ pool size. Due to commonly lacking input data on soil pH, an empirical relationship to annual precipitation is used instead. The equations are -->
 <!-- $$ -->
 <!-- F_{\mathrm{vol}} &= a_{\mathrm{vol}} \; f_T\; (1-W_{\mathrm{cont}})\;\mathrm{NH}_3  \\ -->
@@ -762,9 +829,12 @@ A_J = I_{\mathrm{abs}}\; \varphi_0 \frac{\chi - \gamma}{\chi + 2\gamma}
 <!-- % \end{appendix} -->
 <!-- \end{document} -->
 </div>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
