@@ -6,4 +6,6 @@ output:
     toc_float: true
 ---
 
-# Usage
+# Modular framework
+
+![](fig/sofun_modularframework.png)

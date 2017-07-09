@@ -7,3 +7,5 @@ output:
 ---
 
 # Input
+
+![](fig/inputoutput_sitescale.png)
