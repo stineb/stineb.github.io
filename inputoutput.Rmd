@@ -8,4 +8,4 @@ output:
 
 # Input
 
-![](fig/inputoutput_sitescale.png)
+![](./fig/inputoutput_sitescale.png)
