@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -325,7 +325,9 @@ div.tocify {
 <div id="the-coordination-hypothesis" class="section level2">
 <h2>The coordination hypothesis</h2>
 <p> Light use efficiency (LUE) models provide a powerful method and estimate assimilation rates as a linear function of absorbed light over a given time interval. But the connection between the Farquhar and LUE models is not obvious. Equation Eq. predicts that electron-transport limited photosynthesis is proportional to absorbed PPFD but only applies at relatively low PPFD, and in any case, Equation  for Rubisco-limited photosynthesis is expected to apply at high PPFD. The conundrum is this: how can GPP (the time-integral of photosynthesis) be proportional to PPFD, which is the basis of the LUE model, if the response of photosynthesis to PPFD saturates, as it should according to the Farquhar model? This question has surfaced occasionally in the literature, but not been fully resolved. Medlyn10 reviewed some alternative explanations.</p>
-<p>One of the explanations discussed by Medlyn10 invokes the co-ordination (or co-limitation) hypothesis, which states that <span class="math inline">\(V_{\mathrm{cmax}}\)</span> of leaves at any level in the canopy acclimates spatially and temporally to the prevailing daytime incident PPFD in such a way as to be neither in excess (entailing additional, futile maintenance respiration), nor less than required for full exploitation of the available light. In other words, under typical daytime condition when most photosynthesis takes place, <span class="math inline">\(A_J \approx A_C\)</span>. This hypothesis also requires that <span class="math inline">\(J_{\mathrm{max}}\)</span> maintain a ratio to <span class="math inline">\(V_{\mathrm{cmax}}\)</span> such that strong limitation by <span class="math inline">\(J_{\mathrm{max}}\)</span> is avoided. Evidence for the co-ordination hypothesis was presented by Haxeltine and Prentice11, and Dewar12, who noted that it can explain many otherwise unexplained responses of C3 plants to environmental changes: including changes in leaf C:N ratios along environmental gradients, and the widely observed reduction of <span class="math inline">\(V_{\mathrm{cmax}}\)</span> under experimentally increased atmospheric CO2. More recently Maire et al.13 showed very good agreement between typical daytime values of <span class="math inline">\(A_J\)</span> and <span class="math inline">\(A_C\)</span> as calculated under the prevailing growth conditions for 31 species (293 data points) based on published studies. The co-ordination hypothesis allows a simple approximation by which equation S2 is applied to predict GPP over time scales for which acclimation of <span class="math inline">\(V_{\mathrm{cmax}}\)</span> is possible, with <span class="math inline">\(I\)</span> now representing daily, rather than instantaneous, PPFD.</p>
+<p>One of the explanations discussed by Medlyn10 invokes the co-ordination (or co-limitation) hypothesis, which states that <span class="math inline">\(V_{\mathrm{cmax}}\)</span> of leaves at any level in the canopy acclimates spatially and temporally to the prevailing daytime incident PPFD in such a way as to be neither in excess (entailing additional, futile maintenance respiration), nor less than required for full exploitation of the available light. In other words, under typical daytime condition when most photosynthesis takes place, the following is valid: <span class="math display">\[
+    A_J \approx A_C
+\]</span> This hypothesis also requires that <span class="math inline">\(J_{\mathrm{max}}\)</span> maintain a ratio to <span class="math inline">\(V_{\mathrm{cmax}}\)</span> such that strong limitation by <span class="math inline">\(J_{\mathrm{max}}\)</span> is avoided. Evidence for the co-ordination hypothesis was presented by Haxeltine and Prentice11, and Dewar12, who noted that it can explain many otherwise unexplained responses of C3 plants to environmental changes: including changes in leaf C:N ratios along environmental gradients, and the widely observed reduction of <span class="math inline">\(V_{\mathrm{cmax}}\)</span> under experimentally increased atmospheric CO2. More recently Maire et al.13 showed very good agreement between typical daytime values of <span class="math inline">\(A_J\)</span> and <span class="math inline">\(A_C\)</span> as calculated under the prevailing growth conditions for 31 species (293 data points) based on published studies. The co-ordination hypothesis allows a simple approximation by which equation S2 is applied to predict GPP over time scales for which acclimation of <span class="math inline">\(V_{\mathrm{cmax}}\)</span> is possible, with <span class="math inline">\(I\)</span> now representing daily, rather than instantaneous, PPFD.</p>
 </div>
 <div id="the-least-cost-hypothesis" class="section level2">
 <h2>The least-cost hypothesis</h2>
@@ -336,7 +338,7 @@ div.tocify {
 \]</span></p>
 <div id="predicting-chi" class="section level3">
 <h3>Predicting <span class="math inline">\(\chi\)</span></h3>
-The following section provides a derivation of <span class="math inline">\(\chi\)</span> using Fick’s Law, above stated hypotheses and the Farquhar model for C3 photosynthesis. Transpiration <span class="math inline">\(E\)</span> and assimilation <span class="math inline">\(A\)</span> are coupled through stomatal conductance (<span class="math inline">\(g_s\)</span>). According to the Fick’s Law of diffusion:
+The following section provides a derivation of optimal <span class="math inline">\(\chi\)</span> using Fick’s Law, above stated hypotheses and the Farquhar model for C3 photosynthesis. Transpiration <span class="math inline">\(E\)</span> and assimilation <span class="math inline">\(A\)</span> are coupled through stomatal conductance (<span class="math inline">\(g_s\)</span>). According to the Fick’s Law of diffusion:
 <span class="math display">\[\begin{align}
     E &amp;= 1.6 \; g_s \; D \\
     A &amp;= g_s \; c_a \; (1-\chi)
@@ -418,6 +420,15 @@ k^2 = (c_i+ \Gamma^{\ast})^{4/3} \; (c_i - \Gamma^{\ast})^{2/3} \; (c_i + K)^{-2
     A_J = \phi_0 \; I_{\mathrm{abs}} \; m \; \sqrt{1 - \left( \frac{c}{m} \right)^{2/3} }
 \]</span> Taking typical values of <span class="math inline">\(k\)</span> = 0.4726 and <span class="math inline">\(\chi\)</span> = 0.820, we estimate (using Eq. ) c = 0.41.</p>
 </div>
+<div id="corollary-of-the-chi-prediction" class="section level2">
+<h2>Corollary of the <span class="math inline">\(\chi\)</span> prediction</h2>
+<div id="stomatal-conductance" class="section level3">
+<h3>Stomatal conductance</h3>
+<p>Stomatal conductance <span class="math inline">\(g_s\)</span> follows from the prediction of <span class="math inline">\(\chi\)</span> given by Eq.  and <span class="math inline">\(g_s = A / ( c_a\;(1-\chi) )\)</span> (from Eq. ). Stomatal contuctance can thus be written as <span class="math display">\[
+    g_s = \left( 1 + \frac{\zeta}{\sqrt{D}} \right) \frac{A}{c_a}
+\]</span> This is equivalent to the form derived by Medlyn et al., 2011, apart from the <span class="math inline">\(g_0\)</span> parameter that is missing here.</p>
+</div>
+</div>
 </div>
 
 
@@ -445,7 +456,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
