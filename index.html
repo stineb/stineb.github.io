@@ -221,10 +221,13 @@ $(document).ready(function () {
 <div class="col-sm-6">
 <h1 id="sofun"><strong>SOFUN</strong></h1>
 <h3 id="model-documentation" style="padding-top: 0px;"><em>Model documentation</em></h3>
-<p>SOFUN is a modelling framework (Stocker et al., in prep.) that combines modules for simulating leaf N, light use efficiency and GPP litter and soil decomposition, N mineralisation and inorganic soil N dynamics and thereby accounts for feedbacks between plants and soil processes, including N losses. It is formulated based on costs of N acquisition. Above versus belowground C allocation is determined based on a functional balance approach, whereby CO_2 fixation from photosynthesis (determined by leaf area) is in balance with N acquisition through roots (determined by root surface area) under the constraint of a C:N ratio required for new growth. The model captures growth responses to elevated CO_2 and N fertilisation (Stocker et al., in prep. Unpublished results shown on <a href="http://bstocker.net/next-generation-global-vegetation-model/">my website</a>).</p>
-<p><span class="math display">\[
-E = m\; c^2
-\]</span></p>
+<p>SOFUN is a modelling framework (Stocker et al., in prep.) that combines modules for simulating light use efficiency, leaf N, growth and allocation, litter and soil decomposition, N mineralisation and inorganic soil N dynamics. SOFUN is designed in a modular fashion that allows for alternative process representations and levels of integration (see <a href="https://stineb.github.io/usage.html">here</a>) to be implemented within the same modelling framework.</p>
+<p>Its two main development directions are:</p>
+<ul>
+<li><strong>P-model:</strong> Application as a light use efficiency model with presribed vegetation greenness and an optimality-based prediction of light use efficiency to simulate global GPP. This is based on Prentice et al. (2014) and Wang Han et al. (2017).</li>
+<li><strong>CN-model:</strong> A fully integrated and coupled model for the cycling of carbon and nitrogen in terrestrial ecosystems (so far only grasslands). At the current stage, this is formulated for point-scale applications and designed to provide the basis for simulating flexible carbon allocation for a next-generation Dynamic Global Vegetation Model. The CN-model accounts for feedbacks between plants and soil processes, including N losses. It is formulated based on costs of N acquisition. Above versus belowground C allocation is determined based on a functional balance approach, whereby CO<span class="math inline">\(_2\)</span> fixation from photosynthesis (determined by leaf area) is in balance with N acquisition through roots (determined by root surface area) under the constraint of a C:N ratio required for new growth. Preliminary results are on <a href="http://bstocker.net/next-generation-global-vegetation-model/">my website</a>.</li>
+</ul>
+<p>The model is under development and no open access for its most recent version is provided before publication. Older code is available on <a href="https://github.com/stineb/sofun">github</a>.</p>
 </div>
 <div class="col-sm-6">
 

@@ -6,11 +6,9 @@ output:
     toc_float: true
 ---
 
-# Theory
+*The following derivation and text is adopted and modified from [Wang Han et al. (2017)](https://www.nature.com/articles/s41477-017-0006-8?error=cookies_not_supported&code=878efd7b-d536-4a36-8b65-e24b054ba011).*
 
-*The following derivation and text is adopted and modified from Wang Han et al., 2017.*
-
-The P-model centers around a prediction for the ratio of leaf-internal to ambient \coo ($c_i : c_a = \chi$) as a function of the trade-off between the costs arising from the maintenance of carboxylation capacity ($V_{\mathrm{cmax}}$) and transpiration ($E$). It is founded the standard model for C3 plant photosynthesis (Section \ref{sec:farquhar}), the coordination hypothesis (Section \ref{sec:coordination}) and the least-cost hypothesis (Section \ref{sec:least-cost}).
+The P-model centers around a prediction for the ratio of leaf-internal to ambient CO$_2$ (c$_i$:c$_a$), governed by the trade-off between the costs arising from the maintenance of carboxylation capacity ($V_{\mathrm{cmax}}$) and transpiration (E). It is founded on the standard model for C3 plant photosynthesis (Farquhar et al., 1980), the coordination hypothesis (Maire et al., 2012) and the least-cost hypothesis (Wright et al., 2003; Prentice et al., 2014). Thereby, it simulates how photosynthetic parameters (ci, stomatal conductance, $V_{\mathrm{cmax}}$, and $J_{\mathrm{max}}$) and rates (assimilation, light use efficiency) acclimate to environmental conditions (CO$_2$, temperature, PPFD, VPD). 
 
 ## The Farquhar model
 \label{sec:farquhar}

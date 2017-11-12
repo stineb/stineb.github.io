@@ -6,6 +6,8 @@ output:
     toc_float: true
 ---
 
-# Input
+## Site scale simulations
+![](fig/InputOutput_SOFUN_sitescale.png)
 
-![](fig/inputoutput_sitescale.png)
+## Global simulations
+![](fig/InputOutput_SOFUN_global.png)

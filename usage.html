@@ -305,12 +305,43 @@ div.tocify {
 </div>
 
 
-<div id="modular-framework" class="section level1">
-<h1>Modular framework</h1>
+<p>SOFUN is designed in a modular fashion that allows for alternative process representations and levels of integration (see figure below) to be implemented within the same modelling framework. Its levels of integration are described below.</p>
 <div class="figure">
 <img src="fig/sofun_modularframework.png" />
 
 </div>
+<p><em>Above: Illustration of the modular hierarchy of integration. SOFUN can either be run mode <strong>SPLASH</strong> (simulating evapotranspiration and the soil water balance, given precipitation), mode <strong>P-model</strong> (simulating ci:ca, light use efficiency and GPP, globally, given temperature, PAR, VPD, and CO<span class="math inline">\(_2\)</span>), mode <strong>C-model</strong> (simulating the cycling of C in a grassland with fixed allocation), or mode <strong>CN-model</strong> (simulating the cycling of C and N in a grassland with flexible allocation). The P-model setup requires fAPAR to be prescribed, while the C-model and CN-model setups simulate LAI and fAPAR internally.</em></p>
+<div id="splash" class="section level2">
+<h2>SPLASH</h2>
+<p>This setup simulates potential evapotranspiration (Priestly-Taylor equation) and the soil water balance (bucket model), given precipitation and cloud cover as inputs. The model is described in <a href="https://www.geosci-model-dev.net/10/689/2017/">Davis et al. (2107)</a>. The photosyntetically active radiation calculated by SPLASH may be used to drive the P-model. Soil moisture calculated by SPLASH may be used for an empirical estimate of the reduction in light use efficiency in the P-model.</p>
+<p>Compile and execute the model by</p>
+<pre class="bash"><code>make splash
+echo example_splash_sitescale | ./runsplash</code></pre>
+<p>An alternative implementation of the soil water balance follows the Simple Water Balance Model by <a href="http://journals.ametsoc.org/doi/abs/10.1175/JHM-D-12-099.1">Orth et al. (2013)</a>, where runoff is generated before 100% water holding capacity is reached. This version can be compiled and executed by</p>
+<pre class="bash"><code>make swbm
+echo example_swbm_sitescale | ./runswbm</code></pre>
+</div>
+<div id="p-model" class="section level2">
+<h2>P-model</h2>
+<p>This setup implements the P-model descrbed by <a href="http://onlinelibrary.wiley.com/doi/10.1111/ele.12211/abstract">Prentice et al. (2013)</a> and <a href="https://www.nature.com/articles/s41477-017-0006-8?error=cookies_not_supported&amp;code=878efd7b-d536-4a36-8b65-e24b054ba011">Wang Han et al. (2017)</a>. See also <a href="https://stineb.github.io/pmodel.html">P-model</a>. In combination with prescribed rates of absorbed photosynthetically active radiation, the P-model can be applied as a light use efficiency model for simulating ecosystem-level gross primary productivity.</p>
+<p>Compile and execute for site-scale simulations by</p>
+<pre class="bash"><code>make pmodel
+echo example_sitescale | ./runpmodel</code></pre>
+<p>Compile and execute for global simulations by</p>
+<pre class="bash"><code>make gpmodel
+echo example_global | ./rungpmodel</code></pre>
+</div>
+<div id="cn-model" class="section level2">
+<h2>CN-model</h2>
+<p>This implements a fully integrated model for the cycling of carbon and nitrogen in a grassland (see <a href="https://stineb.github.io/cnmodel.html">here</a>). Currently only implemented for site-scale simulations.</p>
+<pre class="bash"><code>make cnmodel
+echo example_sitescale | ./runcnmodel</code></pre>
+</div>
+<div id="c-model" class="section level2">
+<h2>C-model</h2>
+<p>This implements the same components as the CN-model, but assumes a fixed allocation (root-to-shoot ratio) and does not close the N budget. It mimics a C-only model.</p>
+<pre class="bash"><code>make cmodel
+echo example_sitescale | ./runcmodel</code></pre>
 </div>
 
 

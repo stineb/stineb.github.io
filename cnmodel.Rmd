@@ -260,7 +260,7 @@ This is a bell-shaped function with a maximum at $T_{\mathrm{fix}}^{\mathrm{opt}
 
 In each time step, \cex\ can be spent to acquire N by soil uptake and BNF. Their relative shares is found by finding the maximum N return on \cex\ investment, i.e. \cex\ is spent on soil uptake until a point is reached where soil uptake efficiency falls below the efficiency of BNF at the given soil temperature. This threshold efficiency is given by
 $$
-\psi^{\ast} = \pdv{N_{\mathrm{up}}}{C_{\mathrm{ex}}} \Bigr|_{C_{\mathrm{ex}}=C_{\mathrm{ex}}^{\ast}} = \psi_{\mathrm{fix}}
+\psi^{\ast} = \frac{\partial N_{\mathrm{up}}}{\partial C_{\mathrm{ex}}} \Bigr|_{C_{\mathrm{ex}}=C_{\mathrm{ex}}^{\ast}} = \psi_{\mathrm{fix}}
 $$
 The amount of C expended for soil uptake can then be calculated as
 $$
