@@ -12,7 +12,7 @@ SOFUN is designed in a modular fashion that allows for alternative process repre
 
 *Above: Illustration of the modular hierarchy of integration. SOFUN can either be run mode **SPLASH** (simulating  evapotranspiration and the soil water balance, given precipitation), mode **P-model** (simulating ci:ca, light use efficiency and GPP, globally, given temperature, PAR, VPD, and CO$_2$), mode **C-model** (simulating the cycling of C in a grassland with fixed allocation), or mode **CN-model** (simulating the cycling of C and N in a grassland with flexible allocation). The P-model setup requires fAPAR to be prescribed, while the C-model and CN-model setups simulate LAI and fAPAR internally.*
 
-## Executing SOFUN
+## Levels of integration
 
 SOFUN can be executed at different levels of integration.
 
@@ -275,13 +275,14 @@ python linkdirs_sofun.py
 
 #### Compile SOFUN
 
-Compilation of the P-model Fortran code for site-scale simulations is done by
-```{bash, eval=FALSE}
-make pmodel
-```
-This setup compiles with the open-access GNU compiler gfortran and with the (non-open access) Portland Group Fortran Compiler.
-
 Running the set of simulations for the suite `fluxnet2015` is done be simply executing the Python script (after setting manually: `simsuite = 'fluxnet2015'`):
 ```{bash, eval=FALSE}
 python submitjobs_sofun.py
 ```
+
+This executes the following basic statements that compile and run SOFUN:
+```{bash, eval=FALSE}
+make pmodel
+echo simulation_name | ./runpmodel
+```
+This setup compiles with the open-access GNU compiler for Fortran 90 gfortran and with the (non-open access) Portland Group Fortran Compiler.

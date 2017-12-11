@@ -311,8 +311,8 @@ div.tocify {
 
 </div>
 <p><em>Above: Illustration of the modular hierarchy of integration. SOFUN can either be run mode <strong>SPLASH</strong> (simulating evapotranspiration and the soil water balance, given precipitation), mode <strong>P-model</strong> (simulating ci:ca, light use efficiency and GPP, globally, given temperature, PAR, VPD, and CO<span class="math inline">\(_2\)</span>), mode <strong>C-model</strong> (simulating the cycling of C in a grassland with fixed allocation), or mode <strong>CN-model</strong> (simulating the cycling of C and N in a grassland with flexible allocation). The P-model setup requires fAPAR to be prescribed, while the C-model and CN-model setups simulate LAI and fAPAR internally.</em></p>
-<div id="executing-sofun" class="section level2">
-<h2>Executing SOFUN</h2>
+<div id="levels-of-integration" class="section level2">
+<h2>Levels of integration</h2>
 <p>SOFUN can be executed at different levels of integration.</p>
 <div id="splash" class="section level3">
 <h3>SPLASH</h3>
@@ -499,11 +499,12 @@ git checkout pnmodel</code></pre>
 <pre class="bash"><code>python linkdirs_sofun.py</code></pre>
 <div id="compile-sofun" class="section level4">
 <h4>Compile SOFUN</h4>
-<p>Compilation of the P-model Fortran code for site-scale simulations is done by</p>
-<pre class="bash"><code>make pmodel</code></pre>
-<p>This setup compiles with the open-access GNU compiler gfortran and with the (non-open access) Portland Group Fortran Compiler.</p>
 <p>Running the set of simulations for the suite <code>fluxnet2015</code> is done be simply executing the Python script (after setting manually: <code>simsuite = 'fluxnet2015'</code>):</p>
 <pre class="bash"><code>python submitjobs_sofun.py</code></pre>
+<p>This executes the following basic statements that compile and run SOFUN:</p>
+<pre class="bash"><code>make pmodel
+echo simulation_name | ./runpmodel</code></pre>
+<p>This setup compiles with the open-access GNU compiler for Fortran 90 gfortran and with the (non-open access) Portland Group Fortran Compiler.</p>
 </div>
 </div>
 </div>
