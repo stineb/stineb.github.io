@@ -63,6 +63,8 @@ echo example_sitescale | ./runcmodel
 
 ## Setup for site-level simulations
 
+Below, the setup - from processing input data to running simulations - for site-level simulations for all FLUXNET 2015 Tier 1 sites is given as an example.
+
 ### Summary of setup steps for site-level simulations:
 
   1. Get fAPAR forcing data (for P-model only)
