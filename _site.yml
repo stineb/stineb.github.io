@@ -12,6 +12,16 @@ navbar:
       href: cnmodel.html
     - text: "Input / Output"
       href: inputoutput.html
+      menu:
+        - text: "Input site-scale"
+          href: inputoutput.html
+        - text: "Input global"
+          href: inputoutput.html
+        - text: "Output ASCII"
+          href: inputoutput.html
+        - text: "Output NetCDF"
+          href: inputoutput.html
+
   right:
     - icon: ion-social-github  #fab fa-github
       href: https://github.com/stineb/sofun

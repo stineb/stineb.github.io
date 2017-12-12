@@ -3,11 +3,11 @@ title: "About R Markdown"
 output: html_document
 ---
 
-<!-- Uncomment to include FontAwesom -->
-```{r setup, include=FALSE}
-htmltools::tagList(rmarkdown::html_dependency_font_awesome())
-```
-<i class="fa fa-file"></i>
+<!-- <!-- Uncomment to include FontAwesom -->
+<!-- ```{r setup, include=FALSE} -->
+<!-- htmltools::tagList(rmarkdown::html_dependency_font_awesome()) -->
+<!-- ``` -->
+<!-- <i class="fa fa-file"></i> -->
 
 <style type="text/css">
 .title {
