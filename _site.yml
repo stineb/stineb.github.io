@@ -13,6 +13,6 @@ navbar:
     - text: "Input / Output"
       href: inputoutput.html
   right:
-    - icon: fab fa-github  #ion-social-github
+    - icon: ion-social-github  #fab fa-github
       href: https://github.com/stineb/sofun
 output_dir: "."
