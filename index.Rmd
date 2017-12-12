@@ -13,6 +13,11 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 <!-- <i class="fa fa-file fa-lg"></i> -->
 
+<!-- To preview the correctly rendered html file, click  -->
+<!-- <a href="http://htmlpreview.github.io/?https://stineb.github.io/index.html" title="preview on htmlpreview.github.io" target="_blank">here</a>.  -->
+
+
+
 <style type="text/css">
 .title {
   display: none;
