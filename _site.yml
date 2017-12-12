@@ -21,8 +21,11 @@ navbar:
           href: inputoutput.html
         - text: "Output NetCDF"
           href: inputoutput.html
-
   right:
     - icon: fab fa-github fa-2x
       href: https://github.com/stineb/sofun
+output: 
+  html_document:
+     css: site_libs/font-awesome-4.5.0/css/font-awesome.css
+     self_contained: no
 output_dir: "."
