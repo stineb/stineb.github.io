@@ -1,13 +1,10 @@
 ---
-title: "Input / Output"
+title: "Input, global simulations"
 output:
   html_document:
     toc: true
     toc_float: true
 ---
-
-## Site scale simulations
-![](fig/InputOutput_SOFUN_sitescale.png)
 
 ## Global simulations
 ![](fig/InputOutput_SOFUN_global.png)
