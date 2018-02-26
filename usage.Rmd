@@ -65,7 +65,17 @@ echo example_sitescale | ./runcmodel
 
 ## Run SOFUN
 
-### Get code
+### Overview of steps
+
+Steps to run SOFUN are:
+
+  1. Get code
+  2. Get forcing data (see 'Input' XXX)
+  3. Get site and simulation parameter files
+  4. Link files and directories
+  5. Compile and run
+
+### 1. Get code
 
 The repository [sofun](https://bitbucket.org/labprentice/sofun) contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also [here](https://stineb.github.io)).
 
@@ -78,7 +88,8 @@ git checkout pnmodel
 ```
 
 
-### Get site and simulation parameter files
+### 2. Get forcing data (see 'Input' XXX)
+### 3. Get site and simulation parameter files
 
 P-model simulations are done for each FLUXNET 2015 Tier 1 site separately, covering years for which data is available. After having prepared all the model forcing data by the steps described above, we now prepare the simulation and site parameter files. Here, we're conducting one simulation per site. 
 
@@ -108,7 +119,7 @@ source("prepare_paramfils.R")
 ```
 
 
-### Link directories
+### 4. Link files and directories
 
 Then, create soft links to input and parameter file directories by executing the Python script `linkdirs_sofun.py`. Before executing, specify the simulation suite inside this script manually:
 ```{py, eval=FALSE}
@@ -125,7 +136,7 @@ Then
 python linkdirs_sofun.py
 ```
 
-### Compile code (Fortran 90)
+### 5. Compile and run
 
 Running the set of simulations for the suite `fluxnet2015` is done be simply executing the Python script (after setting manually: `simsuite = 'fluxnet2015'`):
 ```{bash, eval=FALSE}

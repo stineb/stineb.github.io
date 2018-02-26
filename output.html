@@ -326,7 +326,25 @@ div.tocify {
 </div>
 
 
-<p>empty</p>
+<div id="selection-of-output-variables" class="section level2">
+<h2>Selection of output variables</h2>
+<p>Output, both for site-scale and global simulations, is written to NetCDF files. Most variables are written at a daily timestep, some are aggregated to annual values online, i.e., during model runtime.</p>
+<p>The set of output variables to be written is defined by the user in the simulation parameter file (<code>sofun/run/&lt;simname&gt;.sofun.parameter</code>). The following line defines, e.g., whether daily GPP output is to be written:</p>
+<pre class="bash"><code># Variables written to output (core)
+loutdgpp                                .true.</code></pre>
+</div>
+<div id="output-processing" class="section level2">
+<h2>Output processing</h2>
+<p>Output is written into separate files for each simulation year. This limits memory usage by the program, but requires an additional processing step to work with the model outputs: stacking multiple years together into a single file. The file <code>sofun/proc_output_sofun.sh</code> defines two functions:</p>
+<ul>
+<li><code>proc_sitescale_site()</code>: Combines files of multiple years into a single file, for each variable and simulation (site) separately.</li>
+<li><code>proc_sitescale_simsuite()</code>: Executes <code>proc_sitescale_site()</code> for an entire simulation suite of site-scale simulations. This first creates a file <code>sofun/sitelist.txt</code> with a list of all sites in the given simulation suite, using the python script <code>get_sitelist_simsuite.py</code>. Set the name of the simulation suite manually in the header of <code>get_sitelist_simsuite.py</code>.</li>
+</ul>
+<p>Execute the output processing by:</p>
+<pre class="bash"><code>source proc_output_sofun.sh
+proc_sitescale_simsuite</code></pre>
+<p>Note that the output processing takes much more time than the execution of the model itself :-(</p>
+</div>
 
 
 

@@ -370,8 +370,19 @@ echo example_sitescale | ./runcmodel</code></pre>
 </div>
 <div id="run-sofun" class="section level2">
 <h2>Run SOFUN</h2>
+<div id="overview-of-steps" class="section level3">
+<h3>Overview of steps</h3>
+<p>Steps to run SOFUN are:</p>
+<ol style="list-style-type: decimal">
+<li>Get code</li>
+<li>Get forcing data (see ‘Input’ XXX)</li>
+<li>Get site and simulation parameter files</li>
+<li>Link files and directories</li>
+<li>Compile and run</li>
+</ol>
+</div>
 <div id="get-code" class="section level3">
-<h3>Get code</h3>
+<h3>1. Get code</h3>
 <p>The repository <a href="https://bitbucket.org/labprentice/sofun">sofun</a> contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also <a href="https://stineb.github.io">here</a>).</p>
 <p>Clone the SOFUN repository and switch to branch pnmodel (XXX) using command line:</p>
 <pre class="bash"><code>cd your_chosen_home
@@ -379,8 +390,11 @@ git clone https://bitbucket.org/labprentice/sofun
 cd sofun
 git checkout pnmodel</code></pre>
 </div>
+<div id="get-forcing-data-see-input-xxx" class="section level3">
+<h3>2. Get forcing data (see ‘Input’ XXX)</h3>
+</div>
 <div id="get-site-and-simulation-parameter-files" class="section level3">
-<h3>Get site and simulation parameter files</h3>
+<h3>3. Get site and simulation parameter files</h3>
 <p>P-model simulations are done for each FLUXNET 2015 Tier 1 site separately, covering years for which data is available. After having prepared all the model forcing data by the steps described above, we now prepare the simulation and site parameter files. Here, we’re conducting one simulation per site.</p>
 <p>Two types of paramter files have to be created:</p>
 <ol style="list-style-type: decimal">
@@ -402,8 +416,8 @@ systr &lt;- &quot;&#39;&#39;&quot;    # for Mac
 <pre class="r"><code>setwd(&quot;your_chosen_home/getin&quot;)
 source(&quot;prepare_paramfils.R&quot;)</code></pre>
 </div>
-<div id="link-directories" class="section level3">
-<h3>Link directories</h3>
+<div id="link-files-and-directories" class="section level3">
+<h3>4. Link files and directories</h3>
 <p>Then, create soft links to input and parameter file directories by executing the Python script <code>linkdirs_sofun.py</code>. Before executing, specify the simulation suite inside this script manually:</p>
 <pre class="py"><code>simsuite = &#39;fluxnet2015&#39;</code></pre>
 <p>The following specification is required only for global simulations to link input fields (climate, fAPAR) to locations where data is read by SOFUN:</p>
@@ -411,8 +425,8 @@ source(&quot;prepare_paramfils.R&quot;)</code></pre>
 <p>Then</p>
 <pre class="bash"><code>python linkdirs_sofun.py</code></pre>
 </div>
-<div id="compile-code-fortran-90" class="section level3">
-<h3>Compile code (Fortran 90)</h3>
+<div id="compile-and-run" class="section level3">
+<h3>5. Compile and run</h3>
 <p>Running the set of simulations for the suite <code>fluxnet2015</code> is done be simply executing the Python script (after setting manually: <code>simsuite = 'fluxnet2015'</code>):</p>
 <pre class="bash"><code>python submitjobs_sofun.py</code></pre>
 <p>This executes the following basic statements that compile and run SOFUN:</p>
