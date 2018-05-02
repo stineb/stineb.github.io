@@ -250,15 +250,17 @@ source("prepare_paramfils.R")
 
 ### 5. Get, compile and run SOFUN
 
-The repository [sofun](https://bitbucket.org/labprentice/sofun) contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also [here](https://stineb.github.io)).
+The repository [sofun](https://bitbucket.org/labprentice/sofun) contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also [here](https://stineb.github.io)). Typically, a certain tag from a certain branch is desired. Let's say you wish to checkout version 1.1.0, corresponding to the git tag `v1.1.0` from the git branch `pnmodel`. For this, do the following in your shell:
 
-Clone the SOFUN repository and switch to branch pnmodel (XXX) using command line:
 ```{bash, eval=FALSE}
 cd your_chosen_home
-git clone https://bitbucket.org/labprentice/sofun
-cd sofun
-git checkout pnmodel
+git clone https://github.com/stineb/sofun.git
+git remote set-url origin https://github.com/stineb/sofun.git
+git fetch origin
+git checkout tags/v1\.1\.0 -b pnmodel
 ```
+
+You may avoid the backslashes above (`\`) - I had to write it, otherwise a bug prevented this code snippet to be displayed.
 
 Then, create soft links to input and parameter file directories by executing the Python script `linkdirs_sofun.py`. Before executing, specify the simulation suite inside this script manually:
 ```{py, eval=FALSE}
