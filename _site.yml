@@ -13,16 +13,14 @@ navbar:
     - text: "Input / Output"
       href: inputoutput.html
       menu:
-        - text: "Input site-scale"
-          href: inputoutput.html
+        - text: "Input site-level"
+          href: input_sitelevel.html
         - text: "Input global"
-          href: inputoutput.html
-        - text: "Output ASCII"
-          href: inputoutput.html
-        - text: "Output NetCDF"
-          href: inputoutput.html
+          href: input_global.html
+        - text: "Output"
+          href: output.html
   right:
-    - icon: fab fa-github fa-2x
+    - icon: fab fa-github fa-lg
       href: https://github.com/stineb/sofun
 output: 
   html_document:

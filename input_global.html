@@ -11,7 +11,7 @@
 
 
 
-<title>About R Markdown</title>
+<title>Input, global simulations</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,10 +19,12 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -163,6 +165,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -224,46 +321,52 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About R Markdown</h1>
+<h1 class="title toc-ignore">Input, global simulations</h1>
 
 </div>
 
-
-<!-- Uncomment to include FontAwesom -->
-<!-- <i class="fa fa-file fa-lg"></i> -->
-<!-- To preview the correctly rendered html file, click  -->
-<!-- <a href="http://htmlpreview.github.io/?https://stineb.github.io/index.html" title="preview on htmlpreview.github.io" target="_blank">here</a>.  -->
-<style type="text/css">
-.title {
-  display: none;
-}
-
-#getting-started img {
-  margin-right: 10px;
-}
-
-</style>
-<div class="row" style="padding-top: 30px;">
-<div class="col-sm-6">
-<h1 id="sofun"><strong>SOFUN</strong></h1>
-<h3 id="model-documentation" style="padding-top: 0px;"><em>Model documentation</em></h3>
-<p>SOFUN is a modelling framework (Stocker et al., in prep.) that combines modules for simulating light use efficiency, leaf N, growth and allocation, litter and soil decomposition, N mineralisation and inorganic soil N dynamics. SOFUN is designed in a modular fashion that allows for alternative process representations and levels of integration (see <a href="https://stineb.github.io/usage.html">here</a>) to be implemented within the same modelling framework.</p>
-<p>Its two main development directions are:</p>
-<ul>
-<li><strong>P-model:</strong> Application as a light use efficiency model with presribed vegetation greenness and an optimality-based prediction of light use efficiency to simulate global GPP. This is based on Prentice et al. (2014) and Wang Han et al. (2017).</li>
-<li><strong>CN-model:</strong> A fully integrated and coupled model for the cycling of carbon and nitrogen in terrestrial ecosystems (so far only grasslands). At the current stage, this is formulated for point-scale applications and designed to provide the basis for simulating flexible carbon allocation for a next-generation Dynamic Global Vegetation Model. The CN-model accounts for feedbacks between plants and soil processes, including N losses. It is formulated based on costs of N acquisition. Above versus belowground C allocation is determined based on a functional balance approach, whereby CO<span class="math inline">\(_2\)</span> fixation from photosynthesis (determined by leaf area) is in balance with N acquisition through roots (determined by root surface area) under the constraint of a C:N ratio required for new growth. Preliminary results are on <a href="http://bstocker.net/next-generation-global-vegetation-model/">my website</a>.</li>
-</ul>
-<p>The model is under development and no open access for its most recent version is provided before publication. Older code is available on <a href="https://github.com/stineb/sofun">github</a>.</p>
-</div>
-<div class="col-sm-6">
 
 <div class="figure">
-<img src="fig/sofun.png" />
+<img src="fig/InputOutput_SOFUN_global.png" />
 
+</div>
+<p>Global simulations use the same code in modules that are used by <code>biosphere()</code> but use separate modules for processing input and output, and - of course - the number of gridcells to be looped over is not one (as is the case for site-scale simulations), but around 64,000 for global simulations at a half-degree resolution. This page refers to global simulations, but of course, any subset of a collection of gridcells on a longitude-latitude grid can be simulated within one simulation. The following input data is used for global (lon/lat) simulations:</p>
+<div id="climate" class="section level3">
+<h3>Climate</h3>
+<p>Daily climate input is read from WATCH-WFDEI files, downloaded from <code>ftp://ftp.iiasa.ac.at/WFDEI/</code>.</p>
+<p>Citation: Weedon, G. P., G. Balsamo, N. Bellouin, S. Gomes, M. J. Best, and P. Viterbo (2014), The WFDEI meteorological forcing data set: WATCH Forcing Data methodology applied to ERA‐Interim reanalysis data, Water Resour. Res., 50, 7505–7514, <a href="doi:10.1002/2014WR015638" class="uri">doi:10.1002/2014WR015638</a>.</p>
+<p>The following variables are used in SOFUN:</p>
+<ul>
+<li><code>Tair</code>: air temperature (2m), K, converted to degrees Celsius.</li>
+<li><code>Rainf</code>: daily rainfall (liquid precipitation), kg/m2/s, converted to mm/d by multiplication by <span class="math inline">\(60\cdot60\cdot24\)</span></li>
+<li><code>Snowf</code>: daily snowfall, kg/m2/s, converted to mm/d by multiplication by <span class="math inline">\(60\cdot60\cdot24\)</span></li>
+<li><code>Qair</code>: specific humidity, g/g, converted to vapour pressure deficity (VPD) in units of Pa using (see <code>calc_vpd.R</code> in repository <a href="https://bitbucket.org/labprentice/getin">getin</a>)</li>
+<li><code>SWdown</code>: shortwave downwelling radiation, W m<span class="math inline">\(^{-2}\)</span>, converted to photon flux density (PPFD) in units of mol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span> (see <code>get_pointdata_ppfd_wfdei.R</code> in repository <a href="https://bitbucket.org/labprentice/getin">getin</a>).</li>
+</ul>
+</div>
+<div id="fapar" class="section level3">
+<h3>fAPAR</h3>
+</div>
+<div id="soil" class="section level3">
+<h3>Soil</h3>
+</div>
+<div id="land-cover" class="section level3">
+<h3>Land cover</h3>
+</div>
+<div id="co2" class="section level3">
+<h3>CO2</h3>
+</div>
+<div id="download-forcing-files" class="section level3">
+<h3>Download forcing files</h3>
+<p>Global simulations (or better “lon/lat simulations”) read forcing data from global NetCDF files (see figure above). All input files we use here are available on Imperial’s HPC CX1 server and are stored there in a given order and naming. SOFUN may either be run on CX1, or locally. If run locally, download these files and store them, maintaining the same order of subdirectories and file names. To do so, use the bash script <code>download_sofun_input_netcdf.sh</code> from the repository <a href="https://bitbucket.org/labprentice/getin">getin</a> (see also ‘Usage’). Run it by entering in the terminal:</p>
+<pre class="bash"><code>cd your_chosen_home/getin
+./download_sofun_input_netcdf.sh</code></pre>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
