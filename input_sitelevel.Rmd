@@ -43,7 +43,7 @@ cd your_chosen_home
 mkdir -p sofun/input_fluxnet2015_sofun
 ```
 
-### 1. fAPAR Get forcing data
+### 1. Get fAPAR forcing data
 
 When executing the calibration on a local machine, download the data from CX1 or process new data.
 

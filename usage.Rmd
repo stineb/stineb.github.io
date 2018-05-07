@@ -77,33 +77,37 @@ Steps to run SOFUN are:
 
 ### 1. Get code
 
-The repository [sofun](https://bitbucket.org/labprentice/sofun) contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also [here](https://stineb.github.io)).
+The repository [sofun](https://bitbucket.org/labprentice/sofun) contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also [here](https://stineb.github.io)). Typically, a certain tag from a certain branch is desired. Let's say you wish to checkout version 1.1.0, corresponding to the git tag `v1.1.0` from the git branch `pnmodel`. For this, do the following in your shell:
 
-Clone the SOFUN repository and switch to branch pnmodel (XXX) using command line:
 ```{bash, eval=FALSE}
 cd your_chosen_home
-git clone https://bitbucket.org/labprentice/sofun
-cd sofun
-git checkout pnmodel
+git clone https://github.com/stineb/sofun.git
+git remote set-url origin https://github.com/stineb/sofun.git
+git fetch origin
+git checkout tags/v1\.1\.0 -b pnmodel
 ```
 
+You may avoid the backslashes above (`\`) - I had to write it, otherwise a bug prevented this code snippet to be displayed.
 
-### 2. Get forcing data (see 'Input' XXX)
+### 2. Get forcing data
+
+For site-scale simulations, see [here](./input_sitelevel.html), for global simulations, see [here](./input_global.html).
+
 ### 3. Get site and simulation parameter files
 
-P-model simulations are done for each FLUXNET 2015 Tier 1 site separately, covering years for which data is available. After having prepared all the model forcing data by the steps described above, we now prepare the simulation and site parameter files. Here, we're conducting one simulation per site. 
+For site-level simulations, a separate simulation is done for each site. Hence, simulation and site parameter files are needed for each site and simulation.
 
 Two types of paramter files have to be created:
 
 1. **Site parameter files:** Define the geographical location, elevation and soil parameters (or soil type) for each site.
 2. **Simulation parameter files:** Define the simulation start, and end years, number of spinup years, forcing data types, output variables, etc.
 
-Both are created by `prepare_paramfils.R` available from the repository [getin](https://bitbucket.org/labprentice/getin). In the header adjust manually:
+Both are created by `prepare_paramfils.R` available from the repository [getin](https://bitbucket.org/labprentice/getin). In the header adjust manually (the example given here is for site-level simulations at FLUXNET 2015 sites)
 ```{r, eval=FALSE}
 ##--------------------------------------------------------------------
 ## MANUAL SETTINGS
 ##--------------------------------------------------------------------
-myhome           = "/alphadata01/bstocker/"
+myhome           = "your_chosen_home"
 simsuite         = "fluxnet2015"  
 overwrite        = TRUE
 ##--------------------------------------------------------------------
@@ -119,18 +123,6 @@ source("prepare_paramfils.R")
 ```
 
 ### 5. Get, compile and run SOFUN
-
-The repository [sofun](https://bitbucket.org/labprentice/sofun) contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also [here](https://stineb.github.io)). Typically, a certain tag from a certain branch is desired. Let's say you wish to checkout version 1.1.0, corresponding to the git tag `v1.1.0` from the git branch `pnmodel`. For this, do the following in your shell:
-
-```{bash, eval=FALSE}
-cd your_chosen_home
-git clone https://github.com/stineb/sofun.git
-git remote set-url origin https://github.com/stineb/sofun.git
-git fetch origin
-git checkout tags/v1\.1\.0 -b pnmodel
-```
-
-You may avoid the backslashes above (`\`) - I had to write it, otherwise a bug prevented this code snippet to be displayed.
 
 Then, create soft links to input and parameter file directories by executing the Python script `linkdirs_sofun.py`. Before executing, specify the simulation suite inside this script manually:
 ```{py, eval=FALSE}

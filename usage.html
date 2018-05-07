@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -383,19 +383,21 @@ echo example_sitescale | ./runcmodel</code></pre>
 </div>
 <div id="get-code" class="section level3">
 <h3>1. Get code</h3>
-<p>The repository <a href="https://bitbucket.org/labprentice/sofun">sofun</a> contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also <a href="https://stineb.github.io">here</a>).</p>
-<p>Clone the SOFUN repository and switch to branch pnmodel (XXX) using command line:</p>
+<p>The repository <a href="https://bitbucket.org/labprentice/sofun">sofun</a> contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also <a href="https://stineb.github.io">here</a>). Typically, a certain tag from a certain branch is desired. Let’s say you wish to checkout version 1.1.0, corresponding to the git tag <code>v1.1.0</code> from the git branch <code>pnmodel</code>. For this, do the following in your shell:</p>
 <pre class="bash"><code>cd your_chosen_home
-git clone https://bitbucket.org/labprentice/sofun
-cd sofun
-git checkout pnmodel</code></pre>
+git clone https://github.com/stineb/sofun.git
+git remote set-url origin https://github.com/stineb/sofun.git
+git fetch origin
+git checkout tags/v1\.1\.0 -b pnmodel</code></pre>
+<p>You may avoid the backslashes above (<code>\</code>) - I had to write it, otherwise a bug prevented this code snippet to be displayed.</p>
 </div>
-<div id="get-forcing-data-see-input-xxx" class="section level3">
-<h3>2. Get forcing data (see ‘Input’ XXX)</h3>
+<div id="get-forcing-data" class="section level3">
+<h3>2. Get forcing data</h3>
+<p>For site-scale simulations, see <a href="./input_sitelevel.html">here</a>, for global simulations, see <a href="./input_global.html">here</a>.</p>
 </div>
 <div id="get-site-and-simulation-parameter-files" class="section level3">
 <h3>3. Get site and simulation parameter files</h3>
-<p>P-model simulations are done for each FLUXNET 2015 Tier 1 site separately, covering years for which data is available. After having prepared all the model forcing data by the steps described above, we now prepare the simulation and site parameter files. Here, we’re conducting one simulation per site.</p>
+<p>For site-level simulations, a separate simulation is done for each site. Hence, simulation and site parameter files are needed for each site and simulation.</p>
 <p>Two types of paramter files have to be created:</p>
 <ol style="list-style-type: decimal">
 <li><strong>Site parameter files:</strong> Define the geographical location, elevation and soil parameters (or soil type) for each site.</li>
@@ -418,13 +420,6 @@ source(&quot;prepare_paramfils.R&quot;)</code></pre>
 </div>
 <div id="get-compile-and-run-sofun" class="section level3">
 <h3>5. Get, compile and run SOFUN</h3>
-<p>The repository <a href="https://bitbucket.org/labprentice/sofun">sofun</a> contains all the model code (Fortran 90) that implements the P-model and additional levels of model integration (water balance only, closed C, closed C and N cycles, see also <a href="https://stineb.github.io">here</a>). Typically, a certain tag from a certain branch is desired. Let’s say you wish to checkout version 1.1.0, corresponding to the git tag <code>v1.1.0</code> from the git branch <code>pnmodel</code>. For this, do the following in your shell:</p>
-<pre class="bash"><code>cd your_chosen_home
-git clone https://github.com/stineb/sofun.git
-git remote set-url origin https://github.com/stineb/sofun.git
-git fetch origin
-git checkout tags/v1\.1\.0 -b pnmodel</code></pre>
-<p>You may avoid the backslashes above (<code>\</code>) - I had to write it, otherwise a bug prevented this code snippet to be displayed.</p>
 <p>Then, create soft links to input and parameter file directories by executing the Python script <code>linkdirs_sofun.py</code>. Before executing, specify the simulation suite inside this script manually:</p>
 <pre class="py"><code>simsuite = &#39;fluxnet2015&#39;</code></pre>
 <p>The following specification is required only for global simulations to link input fields (climate, fAPAR) to locations where data is read by SOFUN:</p>
@@ -468,7 +463,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
