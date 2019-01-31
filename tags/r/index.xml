@@ -17,10 +17,7 @@
       <pubDate>Thu, 31 Jan 2019 19:19:32 +0100</pubDate>
       
       <guid>https://stineb.github.io/project/rpmodel/</guid>
-      <description>Installation Development release To install and load the rpmodel package (development release) run the following command in your R terminal:
-if(!require(devtools)){install.packages(devtools)} devtools::install_github( &amp;quot;stineb/rpmodel&amp;quot; ) library(rpmodel)  Stable release rpmodel is not yet available on CRAN. We&amp;rsquo;re working on it.
-Author Benjamin Stocker
-References Prentice, I. C., Dong, N., Gleason, S. M., Maire, V., and Wright, I. J.: Balancingthe costs of carbon gain and water transport: testing a new theoretical frameworkfor plant functional ecology, Ecology Letters, 17, 82–91, 10.</description>
+      <description></description>
     </item>
     
     <item>

@@ -59,33 +59,7 @@
       <pubDate>Thu, 31 Jan 2019 19:19:32 +0100</pubDate>
       
       <guid>https://stineb.github.io/project/rpmodel/</guid>
-      <description>
-
-&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-
-&lt;h3 id=&#34;development-release&#34;&gt;Development release&lt;/h3&gt;
-
-&lt;p&gt;To install and load the rpmodel package (development release) run the following command in your R terminal:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;if(!require(devtools)){install.packages(devtools)}
-devtools::install_github( &amp;quot;stineb/rpmodel&amp;quot; )
-library(rpmodel)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;stable-release&#34;&gt;Stable release&lt;/h3&gt;
-
-&lt;p&gt;rpmodel is not yet available on CRAN. We&amp;rsquo;re working on it.&lt;/p&gt;
-
-&lt;h2 id=&#34;author&#34;&gt;Author&lt;/h2&gt;
-
-&lt;p&gt;Benjamin Stocker&lt;/p&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-
-&lt;p&gt;Prentice,  I. C.,  Dong,  N.,  Gleason,  S. M.,  Maire,  V.,  and Wright,  I. J.:  Balancingthe costs of carbon gain and water transport:  testing a new theoretical frameworkfor  plant  functional  ecology, Ecology  Letters,  17,  82–91, 10.1111/ele.12211, &lt;a href=&#34;http://dx.doi.org/10.1111/ele.12211&#34; target=&#34;_blank&#34;&gt;http://dx.doi.org/10.1111/ele.12211&lt;/a&gt;, 2014.&lt;/p&gt;
-
-&lt;p&gt;Wang, H., Prentice, I. C., Keenan, T. F., Davis, T. W., Wright, I. J., Cornwell, W. K.,Evans, B. J., and Peng, C.:  Towards a universal model for carbon dioxide uptake byplants, Nat Plants, 3, 734–741, 2017.&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
