@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S. C. Doney on Personal website</title>
+    <link>https://stineb.github.io/authors/s.-c.-doney/</link>
+    <description>Recent content in S. C. Doney on Personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://stineb.github.io/authors/s.-c.-doney/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Global Carbon Budget 2016</title>
+      <link>https://stineb.github.io/publication/lequere-16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/lequere-16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global carbon budget 2013</title>
+      <link>https://stineb.github.io/publication/lequere-14/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/lequere-14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The global carbon budget 1959-2011</title>
+      <link>https://stineb.github.io/publication/essd-5-165-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/essd-5-165-2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

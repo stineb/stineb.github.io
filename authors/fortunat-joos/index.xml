@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fortunat Joos on Personal website</title>
+    <link>https://stineb.github.io/authors/fortunat-joos/</link>
+    <description>Recent content in Fortunat Joos on Personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://stineb.github.io/authors/fortunat-joos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Holocene peatland and ice-core data constraints on the timing and magnitude of CO2 emissions from past land use</title>
+      <link>https://stineb.github.io/publication/stocker-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/stocker-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Past and future carbon fluxes from land use change, shifting cultivation and wood harvest</title>
+      <link>https://stineb.github.io/publication/stocker-14-a/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/stocker-14-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiple greenhouse-gas feedbacks from the land biosphere under future climate change scenarios</title>
+      <link>https://stineb.github.io/publication/stocker-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/stocker-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ensemble reconstruction constraints on the global carbon cycle sensitivity to climate</title>
+      <link>https://stineb.github.io/publication/frank-10-nat/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/frank-10-nat/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

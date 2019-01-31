@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>V. Kitidis on Personal website</title>
+    <link>https://stineb.github.io/authors/v.-kitidis/</link>
+    <description>Recent content in V. Kitidis on Personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://stineb.github.io/authors/v.-kitidis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Global Carbon Budget 2015</title>
+      <link>https://stineb.github.io/publication/lequere-15-gcp-15/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/lequere-15-gcp-15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global carbon budget 2014</title>
+      <link>https://stineb.github.io/publication/lequere-15-gcp-14/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/lequere-15-gcp-14/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

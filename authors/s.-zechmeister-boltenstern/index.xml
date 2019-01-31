@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S. Zechmeister-Boltenstern on Personal website</title>
+    <link>https://stineb.github.io/authors/s.-zechmeister-boltenstern/</link>
+    <description>Recent content in S. Zechmeister-Boltenstern on Personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://stineb.github.io/authors/s.-zechmeister-boltenstern/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GOLUM-CNP v1.0: a data-driven modeling of carbon, nitrogen and phosphoruscycles in major terrestrial biomes</title>
+      <link>https://stineb.github.io/publication/wang-18-gmd/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/wang-18-gmd/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
