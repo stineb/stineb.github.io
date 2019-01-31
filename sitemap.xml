@@ -943,6 +943,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/</loc>
+      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/beni-stocker/</loc>
       <lastmod>2016-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -3113,15 +3122,6 @@
     
       <loc>https://stineb.github.io/authors/p.-tans/</loc>
       <lastmod>2015-01-01T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://stineb.github.io/</loc>
-      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
