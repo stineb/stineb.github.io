@@ -21,6 +21,24 @@
     </item>
     
     <item>
+      <title>Biography</title>
+      <link>https://stineb.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://stineb.github.io/home/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Featured Publications</title>
+      <link>https://stineb.github.io/home/publications_featured/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://stineb.github.io/home/publications_featured/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Academic</title>
       <link>https://stineb.github.io/home/hero/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0200</pubDate>
@@ -30,11 +48,40 @@
     </item>
     
     <item>
-      <title>Biography</title>
-      <link>https://stineb.github.io/home/about/</link>
+      <title>Projects</title>
+      <link>https://stineb.github.io/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>https://stineb.github.io/home/about/</guid>
+      <guid>https://stineb.github.io/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://stineb.github.io/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://stineb.github.io/home/teaching/</guid>
+      <description>Lecture Introduction to C cycle, MRes EEC, Imperial College London I taught an introductory course to the (terrestrial) carbon cycle for Masters students of the MRes Evolution and Ecology course at Imperial College London. This corresponds to about 6 hours teaching plus exercises.
+The teaching material is accessible as a PDF here:
+ lecture notes  link  The exercises are taught by working with an R script that implements a (heavily simplified) 1-box (onebox.</description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>https://stineb.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://stineb.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>https://stineb.github.io/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://stineb.github.io/home/posts/</guid>
       <description></description>
     </item>
     
@@ -57,31 +104,11 @@
     </item>
     
     <item>
-      <title>Featured Publications</title>
-      <link>https://stineb.github.io/home/publications_featured/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://stineb.github.io/home/publications_featured/</guid>
-      <description>2019
- asdf  2018
- Stocker, B. D., Zscheischler, J. , Keenan, T. F., Prentice, I. C., Peñuelas, J. and Seneviratne, S. I. (2018), Quantifying soil moisture impacts on light use efficiency across biomes. New Phytologist, 218: 1430-1449. doi:10.1111/nph.15123 link  </description>
-    </item>
-    
-    <item>
       <title>Accomplish&amp;shy;ments</title>
       <link>https://stineb.github.io/home/accomplishments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://stineb.github.io/home/accomplishments/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Publications</title>
-      <link>https://stineb.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://stineb.github.io/home/publications/</guid>
       <description></description>
     </item>
     
@@ -101,34 +128,6 @@
       
       <guid>https://stineb.github.io/home/talks/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Posts</title>
-      <link>https://stineb.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://stineb.github.io/home/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://stineb.github.io/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://stineb.github.io/home/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Custom Section</title>
-      <link>https://stineb.github.io/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://stineb.github.io/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
     </item>
     
     <item>

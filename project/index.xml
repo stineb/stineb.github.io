@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Personal website</title>
+    <link>https://stineb.github.io/project/</link>
+    <description>Recent content in Projects on Personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Jan 2019 19:19:32 +0100</lastBuildDate>
+    
+	<atom:link href="https://stineb.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rpmodel</title>
+      <link>https://stineb.github.io/project/rpmodel/</link>
+      <pubDate>Thu, 31 Jan 2019 19:19:32 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/project/rpmodel/</guid>
+      <description>Installation Development release To install and load the rpmodel package (development release) run the following command in your R terminal:
+if(!require(devtools)){install.packages(devtools)} devtools::install_github( &amp;quot;stineb/rpmodel&amp;quot; ) library(rpmodel)  Stable release rpmodel is not yet available on CRAN. We&amp;rsquo;re working on it.
+Author Benjamin Stocker
+References Prentice, I. C., Dong, N., Gleason, S. M., Maire, V., and Wright, I. J.: Balancingthe costs of carbon gain and water transport: testing a new theoretical frameworkfor plant functional ecology, Ecology Letters, 17, 82–91, 10.</description>
+    </item>
+    
+    <item>
+      <title>SOFUN</title>
+      <link>https://stineb.github.io/project/sofun/</link>
+      <pubDate>Thu, 31 Jan 2019 19:19:29 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/project/sofun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rsofun</title>
+      <link>https://stineb.github.io/project/rsofun/</link>
+      <pubDate>Thu, 31 Jan 2019 19:19:24 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/project/rsofun/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

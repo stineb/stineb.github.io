@@ -11,5 +11,16 @@
 	<atom:link href="https://stineb.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Contrasting CO2 emissions from different Holocene land-use reconstructions: Does the carbon budget add up?</title>
+      <link>https://stineb.github.io/post/hololu/</link>
+      <pubDate>Thu, 31 Jan 2019 20:02:29 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/post/hololu/</guid>
+      <description>Reliable reconstructions of past land-use change are essential to address several key challenges in understanding the role of humans in the Earth’s environmental history. Here we discuss how to integrate our understanding of past carbon cycle changes within constraints of the land carbon budget.
+(This article is scheduled to be published in the PAGES Magazine Special Issue on Past Land Use and Land Cover Change)
+Particular features in the ice-core CO2 and CH4 records have been hypothesized to be linked to the rise and fall of agriculture and societies (Ruddiman 2003) and have been used to serve as stratigraphic markers for the Anthropocene (Lewis and Maslin 2015).</description>
+    </item>
+    
   </channel>
 </rss>
