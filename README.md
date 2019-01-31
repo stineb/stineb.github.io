@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+# Academic Kickstart
 
-You can use the [editor on GitHub](https://github.com/stineb/stineb.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Academic** is a framework to help you create a beautiful website quickly. Perfect for personal, student, or academic websites. [Check out the latest demo](https://themes.gohugo.io/theme/academic/) of what you'll get in less than 10 minutes or [view the documentation](https://sourcethemes.com/academic/docs/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Academic Kickstart** provides a minimal template to kickstart your new website by following the simple steps below.
 
-### Markdown
+[![Screenshot](https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png)](https://github.com/gcushen/hugo-academic/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Getting Started
 
-```markdown
-Syntax highlighted code block
+The following two methods describe how to install in the cloud using your web browser and how to install on your PC using the Command Prompt/Terminal app.
 
-# Header 1
-## Header 2
-### Header 3
+### Quick install using your web browser
 
-- Bulleted
-- List
+1. [Install Academic with Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/sourcethemes/academic-kickstart)
+    * Netlify will provide you with a customizable URL to access your new site
+2. On GitHub, go to your newly created `academic-kickstart` repository and edit `config.toml` to personalize your site. Shortly after saving the file, your site will automatically update
+3. Read the [Quick Start Guide](https://sourcethemes.com/academic/docs/) to learn how to add Markdown content. For inspiration, refer to the [Markdown content](https://github.com/gcushen/hugo-academic/tree/master/exampleSite) which powers the [Demo](https://themes.gohugo.io/theme/academic/)
 
-1. Numbered
-2. List
+### Install on your PC
 
-**Bold** and _Italic_ and `Code` text
+Prerequisites:
 
-[Link](url) and ![Image](src)
-```
+* [Download and install Git](https://git-scm.com/downloads)
+* [Download and install Hugo](https://gohugo.io/getting-started/installing/#quick-install)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+1. Clone (or [Fork](https://github.com/sourcethemes/academic-kickstart#fork-destination-box) or [download](https://github.com/sourcethemes/academic-kickstart/archive/master.zip)) the *Academic Kickstart* repository with Git: 
 
-### Jekyll Themes
+       git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
+    
+    *Note that if you forked Academic Kickstart, the above command should be edited to clone your fork.*
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/stineb/stineb.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+2. Initialize the theme:
 
-### Support or Contact
+       cd My_Website
+       git submodule update --init --recursive
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+3. View your new website:
+      
+       hugo server
+
+    Now you can go to [localhost:1313](http://localhost:1313) and your new Academic powered website should appear.
+  
+4. Read the [Quick Start Guide](https://sourcethemes.com/academic/docs/) to learn how to add Markdown content, customize your site, and deploy it.
+
+## License
+
+Copyright 2017 [George Cushen](https://georgecushen.com).
+
+Released under the [MIT](https://github.com/sourcethemes/academic-kickstart/blob/master/LICENSE.md) license.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/academic-kickstart/readme?pixel)](https://github.com/igrigorik/ga-beacon)
