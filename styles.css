@@ -506,7 +506,7 @@ a[data-fancybox] img {
 }
 
 .home-section:nth-of-type(even) {
-  background-color: #EAE7D6;
+  background-color: #d9d3b5;
 }
 
 .dark .home-section {
@@ -1576,7 +1576,7 @@ a.badge:hover {
 }
 
 .navbar-light {
-  background: #24C2CB !important;
+  background: #5f584e !important;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
 }
 
@@ -1614,14 +1614,14 @@ nav#navbar-main li.nav-item {
 }
 
 .navbar-light .navbar-nav>.nav-item>.nav-link:hover {
-  color: #00828B;
+  color: #d56262;
   background-color: transparent;
 }
 
 .navbar-light .navbar-nav>li.nav-item>a.active,
 .navbar-light .navbar-nav>li.nav-item>a.active:focus,
 .navbar-light .navbar-nav>li.nav-item>a.active:hover {
-  color: #00828B;
+  color: #d56262;
   font-weight: 700;
   background-color: transparent !important; /* Override Bootstrap. */
 }
@@ -1643,7 +1643,7 @@ nav#navbar-main li.nav-item {
 }
 
 .dropdown-menu {
-  background-color: #24C2CB !important;
+  background-color: #5f584e !important;
 }
 
 .dropdown-menu > li > a {
@@ -1658,17 +1658,17 @@ nav#navbar-main li.nav-item {
 
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
-  color: #00828B;
+  color: #d56262;
   text-decoration: none;
-  background-color: #24C2CB;
+  background-color: #5f584e;
 }
 
 .dropdown-menu > .active,
 .dropdown-menu > .active:focus,
 .dropdown-menu > .active:hover {
-  color: #24C2CB;
+  color: #5f584e;
   text-decoration: none;
-  background-color: #00828B;
+  background-color: #d56262;
   outline: 0;
 }
 
@@ -1677,7 +1677,7 @@ nav#navbar-main li.nav-item {
 .navbar-light .navbar-nav>.open>a:hover,
 .navbar-light .navbar-nav>.open>a:visited {
   color: #fff !important;
-  background-color: #24C2CB !important;
+  background-color: #5f584e !important;
 }
 
 .navbar-light .navbar-brand {
@@ -1758,7 +1758,7 @@ nav#navbar-main li.nav-item {
   .navbar-light .navbar-nav .open .dropdown-menu >.nav-item> .active,
   .navbar-light .navbar-nav .open .dropdown-menu >.nav-item> .active:focus,
   .navbar-light .navbar-nav .open .dropdown-menu >.nav-item> .active:hover {
-    color: #00828B;
+    color: #d56262;
     background-color: transparent;
   }
 
