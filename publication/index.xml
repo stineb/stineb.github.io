@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>soilm_global: Code for Stocker et al. (2019) Nature Geosci.</title>
+      <link>https://stineb.github.io/publication/soilm-global-code/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/soilm-global-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ecosystem responses to elevated CO2 governed by plant–soil interactions and the cost of nitrogen acquisition</title>
       <link>https://stineb.github.io/publication/terrer-18-newphyt/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
@@ -26,6 +35,15 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
       <guid>https://stineb.github.io/publication/wang-18-gmd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPP: Site-scale and global model outputs from P-model used for Stocker et al. (2019) NatureGeosci.</title>
+      <link>https://stineb.github.io/publication/soilm-global-data/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/soilm-global-data/</guid>
       <description></description>
     </item>
     
@@ -53,6 +71,24 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
       <guid>https://stineb.github.io/publication/vicca-18-erl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fLUE</title>
+      <link>https://stineb.github.io/publication/flue/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/flue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nn_fluxnet2015: Final release</title>
+      <link>https://stineb.github.io/publication/nn-fluxnet-2015-code/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/nn-fluxnet-2015-code/</guid>
       <description></description>
     </item>
     

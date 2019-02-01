@@ -36,6 +36,22 @@
     
     <url>
     
+      <loc>https://stineb.github.io/data_code/soilm-global-code/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/soilm-global-code/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/publication/terrer-18-newphyt/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
     </url>
@@ -45,6 +61,22 @@
     <url>
     
       <loc>https://stineb.github.io/publication/wang-18-gmd/</loc>
+      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/data_code/soilm-global-data/</loc>
+      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/soilm-global-data/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -76,8 +108,32 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <loc>https://stineb.github.io/data_code/flue/</loc>
+      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/flue/</loc>
+      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/data_code/nn-fluxnet-2015-code/</loc>
+      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/nn-fluxnet-2015-code/</loc>
+      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -109,6 +165,14 @@
     <url>
     
       <loc>https://stineb.github.io/publication/li-17-bg/</loc>
+      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/data_code/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -389,6 +453,15 @@
     <url>
     
       <loc>https://stineb.github.io/author/admin/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication_types/0/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -1007,7 +1080,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/benjamin-stocker/</loc>
-      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3202,7 +3275,7 @@
     <url>
     
       <loc>https://stineb.github.io/publication_types/</loc>
-      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
