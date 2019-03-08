@@ -31,5 +31,33 @@
 Particular features in the ice-core CO2 and CH4 records have been hypothesized to be linked to the rise and fall of agriculture and societies (Ruddiman 2003) and have been used to serve as stratigraphic markers for the Anthropocene (Lewis and Maslin 2015).</description>
     </item>
     
+    <item>
+      <title>Why we need ecosystem manipulation experiments to reveal the coupled C-N system’s behaviour</title>
+      <link>https://stineb.github.io/post/cn_experiments/</link>
+      <pubDate>Fri, 06 Oct 2017 13:17:30 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/post/cn_experiments/</guid>
+      <description>In this blog, I’m going to argue why it is crucial to use observational data from ecosystem manipulation experiments (EME) for model evaluation and calibration. And I’m going to make this case using the example of nitrogen limitation and how EMEs guided the development of Dynamic Global Vegetation Models (DGVMs) over the last one-and-a-half decades and repeatedly exposed their deficiencies. This, I hope, will convince you that there is a great future in a close relationship between modellers and experimentalists around the data from EMEs.</description>
+    </item>
+    
+    <item>
+      <title>The Fertility Question: How do soil nutrients influence the carbon cycle?</title>
+      <link>https://stineb.github.io/post/fertilityquestion/</link>
+      <pubDate>Fri, 05 Jun 2015 13:31:09 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/post/fertilityquestion/</guid>
+      <description>A general notion of “soil fertility” is commonly left unaccounted for in models of the terrestrial biosphere and has received relatively little attention in carbon cycle science. This changed since the presentation of results by Vicca et al. (2012) and Fernandez-Martinez et al. (2014).
+Using data from forests around the globe where gross primary productivity (GPP) has been measured in parallel to changes in ecosystem biomass storage, these authors showed that forests produce biomass more efficiently on fertile soils.</description>
+    </item>
+    
+    <item>
+      <title>The Big N Question: What controls rates of nitrogen fixation and losses?</title>
+      <link>https://stineb.github.io/post/nquestion/</link>
+      <pubDate>Sat, 17 Jan 2015 13:35:04 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/post/nquestion/</guid>
+      <description>To address this question, we have to start with the notion that, on the long term, N losses from ecosystems via gaseous and leaching pathways have to be compensated by N inputs. Natural, that is non-human affected, N inputs are small and have been shown not to be sufficient to explain the measured N balance. Biological N fixation (BNF) must account for the remainder. However, drawing a complete picture of the N budget in terrestrial ecosystems has been notoriously difficult, because BNF is practically impossible to measure and estimated rates of global BNF range from around 200 TgN (Cleveland et al.</description>
+    </item>
+    
   </channel>
 </rss>
