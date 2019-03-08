@@ -10,6 +10,64 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Identifying drought impacts in a data-rich world</title>
+      <link>https://stineb.github.io/post/soilm_global/</link>
+      <pubDate>Fri, 08 Mar 2019 11:56:10 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/post/soilm_global/</guid>
+      <description>
+
+&lt;p&gt;We live in a data-rich world. Satellites are collecting information about the state of the Earth surface in ever more fine-grained resolution. CO2 and water exchange fluxes between the vegetation and the atmosphere are continuously measured at several hundred sites across the globe. And (almost) all of this data is being made easily accessible to researchers from any institution or country. This data revolution has created a playground for data analysis and a testbed for models with an unprecedented potential for addressing scientific challenges and resolving pressing questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;How do droughts affect photosynthesis, vegetation productivity and the global carbon cycle?&lt;/em&gt; is one such question. Remote-sensing based models are widely used for estimating terrestrial photosynthesis. These commonly use information about the greenness of the Earth surface, incoming solar radiation and some measure of dryness. Due to the limitation that soil moisture is particularly challenging to observe from satellites, these models have commonly resorted to using information only on the atmospheric dryness (vapour pressure deficit). In view of known physiological mechanisms by which plants respond to drying soils, the question is: Does vapour pressure deficit alone provide enough information to simulate drought impacts on vegetation? &lt;/p&gt;
+
+&lt;p&gt;The advantage of our world’s data richness is that we now have more precise insights from observations to better uncover weaknesses in models. One such insight we gained in an earlier study (Stocker et al., 2018), where we isolated the soil moisture effect on photosynthesis from other drivers, including the (partly co-varying) vapour pressure deficit. By analysing patterns in the data from flux measurements and satellites, we found a clear additional effect by soil moisture that substantially reduces photosynthesis during “soil moisture droughts” - an effect that cannot be estimated when solely relying on information on vapour pressure deficit. It was an obvious question to ask whether the remote sensing-based terrestrial photosynthesis models, which do not account for soil moisture directly, can still accurately simulate photosynthesis during these, now well-defined drought periods. Freely accessible data and an open data sharing philosophy of the research community made it possible that within a short amount of time, we had all the necessary resources to start investigating. And soon thereafter, we had our Eureka moment: Indeed, all the models we investigated had a very clear relationship with the timing and magnitude of the apparent soil moisture stress we identified earlier. This is what we show in the paper, now published in &lt;em&gt;Nature Geoscience&lt;/em&gt; (Stocker et al., 2019).&lt;/p&gt;
+
+&lt;p&gt;This finding has implications not only for simulating vegetation productivity, but also for estimating the impacts of extreme events and the year-to-year variations of the terrestrial carbon balance. Dry and hot periods like last year’s summer in northern Europe can negatively affect the C balance of a whole continent and thereby accelerate the man-made increase in atmospheric CO2. Our new paper shows that the size of such anomalies, and therefore the magnitude of disruption of the C cycle, is substantially underestimated when the additional effect by soil moisture stress is neglected. This clearly points to the need for revising satellite-based monitoring of vegetation productivity and to develop new methods for including information on how soil moisture varies across space and time and how this affects vegetation productivity. Our findings come at a time when several groups are developing new methods to use remotely sensed information to estimate soil moisture. Resolving this challenge is important as with a changing climate, periods of drought may become more frequent, intense and prolonged and we need to have a better grasp of how this affects ecosystems and the carbon cycle.&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Stocker, B. D.&lt;/strong&gt;, Zscheischler, J. , Keenan, T. F., Prentice, I. C., Peñuelas, J. and Seneviratne, S. I. (2018), Quantifying soil moisture impacts on light use efficiency across biomes. &lt;em&gt;New Phytologist&lt;/em&gt;, 218: 1430-1449. doi:10.1111/nph.15123&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stocker, B. D.&lt;/strong&gt;, Zscheischler, J. , Keenan, T. F., Prentice, I. C., Seneviratne, S. I. and Peñuelas, J. (2019), Drought impacts on terrestrial primary production underestimated by satellite monitoring. &lt;em&gt;Nature Geosci.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Carbon-water coupling across scales</title>
+      <link>https://stineb.github.io/project/soilm_global/</link>
+      <pubDate>Fri, 08 Mar 2019 11:46:14 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/project/soilm_global/</guid>
+      <description>
+
+&lt;h2 id=&#34;summary-of-our-research&#34;&gt;Summary of our research&lt;/h2&gt;
+
+&lt;p&gt;In our &lt;a href=&#34;xxx&#34; target=&#34;_blank&#34;&gt;new paper published in &lt;em&gt;Nature Geoscience&lt;/em&gt;&lt;/a&gt;, we identified a common bias in different state-of-the-art satellite-based estimates of terrestrial photosynthesis, and found that this bias is closely related to droughts and their apparent impact on the functioning of vegetation. In other words, common satellite-based vegetation monitoring methods underestimate the impact of droughts.&lt;/p&gt;
+
+&lt;p&gt;What are the implications of this bias for our understanding of the terrestrial C cycle and its year-to-year variability? We investigated this question using a new global implementation of the P-model (open-access code available &lt;a href=&#34;https://github.com/stineb/sofun&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;). Our results suggest that accurately capturing soil moisture stress in photosynthesis modelling is absolutely crucial for estimating the year-to-year variability in vegetation productivity and the impacts of drought extreme events. Not capturing this effect accurately leads to a massive underestimation of this variability.&lt;/p&gt;
+
+&lt;p&gt;However, in our simulations, the locally strong soil moisture effect on vegetation productivity and its variability does not translate into a similarly strong water-control on the global-scale variability in terrestrial productivity. This is due to the compensating effects of different continents that are not synchronously drought-stressed and tend to compensate each other.&lt;/p&gt;
+
+&lt;p&gt;This is seems to be at odds with a recent study by &lt;a href=&#34;https://www.nature.com/articles/s41586-018-0424-4&#34; target=&#34;_blank&#34;&gt;Humphrey et al. (2018)&lt;/a&gt; who found a clear relationship between terrestrial water storage and the atmospheric CO2 growth rate, which is known to be largely driven by year-to-year changes in terrestrial photosynthesis and vegetation productivity. Interestingly, our results seem to reflect more the findings by &lt;a href=&#34;https://www.nature.com/articles/nature20780&#34; target=&#34;_blank&#34;&gt;Jung et al. (2017)&lt;/a&gt; who found a similar compensating effects of different regions and continents. This raises fundamental questions about the ominous water-carbon coupling at the global scale: Is it just an apparent phenomenon where terrestrial water storage is a proxy for some other factor that controls vegetation functioning? Or are we missing some element of plant access to water that has a longer memory and stronger year-to-year variability, so that the simulated compensating effects would no longer neatly compensate each other? This is an exciting lead for future research&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;further-links&#34;&gt;Further links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A &lt;a href=&#34;https://stineb.github.io/post/soilm_global/&#34;&gt;blogpost&lt;/a&gt; written for &lt;a href=&#34;https://natureecoevocommunity.nature.com/channels/521-behind-the-paper&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Nature Ecology and Evolution - Behind the Paper&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A &lt;a href=&#34;https://stineb.github.io/static/files/pressrelease_soilm_global.pdf&#34;&gt;press release&lt;/a&gt; written in collaboration with Natalie Sanders, Imperial College&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;data-and-code&#34;&gt;Data and code&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Model output data from site-scale and global P-model simulations are available on &lt;a href=&#34;https://zenodo.org/record/1423484#.XIJNAlNKjOQ&#34; target=&#34;_blank&#34;&gt;Zenodo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Code for the entire analysis and producing figures is available on &lt;a href=&#34;https://zenodo.org/record/2543324#.XIJNTVNKjOQ&#34; target=&#34;_blank&#34;&gt;Zenodo&lt;/a&gt; and on &lt;a href=&#34;https://github.com/stineb/soilm_global&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;. Compile (knit) RMarkdown file &lt;code&gt;knit_soilm_global.Rmd&lt;/code&gt; for a full reproduction of results or &lt;code&gt;si_soilm_global.Rmd&lt;/code&gt; for re-creating the Supplementary Information to our paper.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Contrasting CO2 emissions from different Holocene land-use reconstructions: Does the carbon budget add up?</title>
       <link>https://stineb.github.io/post/hololu/</link>
       <pubDate>Thu, 31 Jan 2019 20:02:29 +0100</pubDate>
@@ -158,24 +216,6 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
       <guid>https://stineb.github.io/publication/stocker-18-nphyt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Using research networks to create the comprehensive datasets needed to assess nutrient availability as a key determinant of terrestrial carbon cycling</title>
-      <link>https://stineb.github.io/publication/vicca-18-erl/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
-      
-      <guid>https://stineb.github.io/publication/vicca-18-erl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fLUE</title>
-      <link>https://stineb.github.io/data_code/flue/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
-      
-      <guid>https://stineb.github.io/data_code/flue/</guid>
       <description></description>
     </item>
     
