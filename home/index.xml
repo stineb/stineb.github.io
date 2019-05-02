@@ -6,7 +6,7 @@
     <description>Recent content in Homes on Beni Stocker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://stineb.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title></title>
       <link>https://stineb.github.io/home/hero/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 +0200</pubDate>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/hero/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title></title>
       <link>https://stineb.github.io/home/hero_carousel/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 +0200</pubDate>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/hero_carousel/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>About me</title>
       <link>https://stineb.github.io/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/about/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>News</title>
       <link>https://stineb.github.io/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/talks/</guid>
       <description>New paper on carbon-water coupling across scales published in Nature Geoscience. More info here. I got my project MIND funded by the Swiss National Science Foundation with an Eccellenza grant, to be hosted at ETH Zürich and WSL, starting in September this year. I&amp;rsquo;m looking for a Postdoc to start around September too, and two Ph.D. students a year later. More info here. Come see our session at EGU 2019: Session BG2.</description>
@@ -50,7 +50,7 @@
     <item>
       <title>Featured Publications</title>
       <link>https://stineb.github.io/home/publications_featured/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/publications_featured/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>Projects</title>
       <link>https://stineb.github.io/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/projects/</guid>
       <description></description>
@@ -68,7 +68,7 @@
     <item>
       <title>Teaching</title>
       <link>https://stineb.github.io/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/teaching/</guid>
       <description>Lecture Introduction to C cycle, MRes EEC, Imperial College London I taught an introductory course to the (terrestrial) carbon cycle for Masters students of the MRes Evolution and Ecology course at Imperial College London. This corresponds to about 6 hours teaching plus exercises.
@@ -79,7 +79,7 @@ The teaching material is accessible as a PDF here:
     <item>
       <title>Recent Publications</title>
       <link>https://stineb.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/publications/</guid>
       <description></description>
@@ -88,7 +88,7 @@ The teaching material is accessible as a PDF here:
     <item>
       <title>Data and code</title>
       <link>https://stineb.github.io/home/data_code/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/data_code/</guid>
       <description></description>
@@ -97,7 +97,7 @@ The teaching material is accessible as a PDF here:
     <item>
       <title>Recent Posts</title>
       <link>https://stineb.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/posts/</guid>
       <description></description>
@@ -106,7 +106,7 @@ The teaching material is accessible as a PDF here:
     <item>
       <title>Skills</title>
       <link>https://stineb.github.io/home/skills/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/skills/</guid>
       <description></description>
@@ -133,7 +133,7 @@ The teaching material is accessible as a PDF here:
     <item>
       <title>Featured Talks</title>
       <link>https://stineb.github.io/home/talks_featured/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/talks_featured/</guid>
       <description></description>
@@ -142,7 +142,7 @@ The teaching material is accessible as a PDF here:
     <item>
       <title>Tags</title>
       <link>https://stineb.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/tags/</guid>
       <description></description>
@@ -151,7 +151,7 @@ The teaching material is accessible as a PDF here:
     <item>
       <title>Contact</title>
       <link>https://stineb.github.io/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://stineb.github.io/home/contact/</guid>
       <description></description>

@@ -6,7 +6,7 @@
     <description>Recent content in Open Access data and code on Beni Stocker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="https://stineb.github.io/data_code/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>soilm_global: Code for Stocker et al. (2019) Nature Geosci.</title>
       <link>https://stineb.github.io/data_code/soilm-global-code/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0800</pubDate>
       
       <guid>https://stineb.github.io/data_code/soilm-global-code/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>GPP: Site-scale and global model outputs from P-model used for Stocker et al. (2019) NatureGeosci.</title>
       <link>https://stineb.github.io/data_code/soilm-global-data/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 -0800</pubDate>
       
       <guid>https://stineb.github.io/data_code/soilm-global-data/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>fLUE</title>
       <link>https://stineb.github.io/data_code/flue/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 -0800</pubDate>
       
       <guid>https://stineb.github.io/data_code/flue/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>nn_fluxnet2015: Final release</title>
       <link>https://stineb.github.io/data_code/nn-fluxnet-2015-code/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 -0800</pubDate>
       
       <guid>https://stineb.github.io/data_code/nn-fluxnet-2015-code/</guid>
       <description></description>
