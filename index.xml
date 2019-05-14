@@ -10,6 +10,36 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>LSD Heatscatter with ggplot</title>
+      <link>https://stineb.github.io/post/lsd/</link>
+      <pubDate>Mon, 13 May 2019 23:19:08 -0700</pubDate>
+      
+      <guid>https://stineb.github.io/post/lsd/</guid>
+      <description>&lt;p&gt;I love the &lt;a href=&#34;https://www.rdocumentation.org/packages/LSD/versions/4.0-0/topics/heatscatter&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;heatscatter()&lt;/code&gt;&lt;/a&gt; function from the &lt;a href=&#34;https://cran.r-project.org/web/packages/LSD/index.html&#34; target=&#34;_blank&#34;&gt;LSD R package&lt;/a&gt;. I&amp;rsquo;ve even used it for my own publications (see Figs. 2 and 7 in &lt;a href=&#34;https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.15123&#34; target=&#34;_blank&#34;&gt;Stocker et al. 2017&lt;/a&gt;). Since having written this paper and creating the figures I&amp;rsquo;ve (finally) moved to using ggplot. Unfortunately, &lt;code&gt;heatscatter()&lt;/code&gt; creates a plot in base R.&lt;/p&gt;
+
+&lt;p&gt;Googling, I found no satisfying solution. What is described on &lt;a href=&#34;http://auguga.blogspot.com/2015/10/r-heat-scatter-plot.html&#34; target=&#34;_blank&#34;&gt;this blog&lt;/a&gt; does&amp;rsquo;t really do the trick.&lt;/p&gt;
+
+&lt;p&gt;I tried another approach. I forked the &lt;a href=&#34;https://github.com/stineb/LSD&#34; target=&#34;_blank&#34;&gt;LSD library into my github&lt;/a&gt; and hacked an additional argument into the &lt;code&gt;heatscatter()&lt;/code&gt; function as:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ggplot&lt;/code&gt; a logical: if &lt;code&gt;TRUE&lt;/code&gt; uses the ggplot2 library to create plots. Defaults to &lt;code&gt;FALSE&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When set to &lt;code&gt;TRUE&lt;/code&gt;, the function returns a ggplot object. For example the following bit of code &amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gg &amp;lt;- heatscatter(mdf$lue_mod, mdf$lue_obs, xlab = &amp;quot;Modelled&amp;quot;, ylab = &amp;quot;Observed&amp;quot;, ggplot = TRUE)
+gg + lab(title = &amp;quot;Example&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;hellip; prints a simple plot, by default (and hard-coded), using ggplot&amp;rsquo;s &lt;code&gt;theme_classic()&lt;/code&gt;. This looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://stineb.github.io/img/ggplot_heatscatter_example.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s it. A direct link to the hacked &lt;code&gt;heatscatter()&lt;/code&gt; function is &lt;a href=&#34;https://github.com/stineb/LSD/blob/master/R/LSD.heatscatter.R&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Credits to the halluzinogenic LSD package developer Bjoern Schwalb!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Landcover6K model intercomparison</title>
       <link>https://stineb.github.io/project/hololu_lc6k/</link>
       <pubDate>Fri, 08 Mar 2019 13:51:42 +0100</pubDate>
@@ -233,15 +263,6 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 -0800</pubDate>
       
       <guid>https://stineb.github.io/data_code/soilm-global-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GPP: Site-scale and global model outputs from P-model used for Stocker et al. (2019) NatureGeosci.</title>
-      <link>https://stineb.github.io/publication/soilm-global-data/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 -0800</pubDate>
-      
-      <guid>https://stineb.github.io/publication/soilm-global-data/</guid>
       <description></description>
     </item>
     

@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>LSD Heatscatter with ggplot</title>
+      <link>https://stineb.github.io/post/lsd/</link>
+      <pubDate>Mon, 13 May 2019 23:19:08 -0700</pubDate>
+      
+      <guid>https://stineb.github.io/post/lsd/</guid>
+      <description>I love the heatscatter() function from the LSD R package. I&amp;rsquo;ve even used it for my own publications (see Figs. 2 and 7 in Stocker et al. 2017). Since having written this paper and creating the figures I&amp;rsquo;ve (finally) moved to using ggplot. Unfortunately, heatscatter() creates a plot in base R.
+Googling, I found no satisfying solution. What is described on this blog does&amp;rsquo;t really do the trick.
+I tried another approach.</description>
+    </item>
+    
+    <item>
       <title>Identifying drought impacts in a data-rich world</title>
       <link>https://stineb.github.io/post/soilm_global/</link>
       <pubDate>Fri, 08 Mar 2019 11:56:10 +0100</pubDate>

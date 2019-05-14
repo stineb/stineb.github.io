@@ -28,10 +28,12 @@
   
     
   
-  <meta name="description" content="Postdoc">
+  <meta name="description" content="I love the heatscatter() function from the LSD R package. I&rsquo;ve even used it for my own publications (see Figs. 2 and 7 in Stocker et al. 2017). Since having written this paper and creating the figures I&rsquo;ve (finally) moved to using ggplot. Unfortunately, heatscatter() creates a plot in base R.
+Googling, I found no satisfying solution. What is described on this blog does&rsquo;t really do the trick.
+I tried another approach.">
 
   
-  <link rel="alternate" hreflang="en-us" href="">
+  <link rel="alternate" hreflang="en-us" href="https://stineb.github.io/post/lsd/">
 
   
 
@@ -119,34 +121,37 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="">
+  <link rel="canonical" href="https://stineb.github.io/post/lsd/">
 
   
   
   
   
     
-    
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@@SteniBocker">
   <meta property="twitter:creator" content="@@SteniBocker">
   
   <meta property="og:site_name" content="Beni Stocker">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="404 Page not found | Beni Stocker">
-  <meta property="og:description" content="Postdoc"><meta property="og:image" content="https://stineb.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://stineb.github.io/post/lsd/">
+  <meta property="og:title" content="LSD Heatscatter with ggplot | Beni Stocker">
+  <meta property="og:description" content="I love the heatscatter() function from the LSD R package. I&rsquo;ve even used it for my own publications (see Figs. 2 and 7 in Stocker et al. 2017). Since having written this paper and creating the figures I&rsquo;ve (finally) moved to using ggplot. Unfortunately, heatscatter() creates a plot in base R.
+Googling, I found no satisfying solution. What is described on this blog does&rsquo;t really do the trick.
+I tried another approach."><meta property="og:image" content="https://stineb.github.io/post/lsd/featured.png">
   <meta property="og:locale" content="en-us">
   
+  <meta property="article:published_time" content="2019-05-13T23:19:08-07:00">
   
+  <meta property="article:modified_time" content="2019-05-13T23:19:08-07:00">
+  
+
   
 
   
 
-  
-
-  <title>404 Page not found | Beni Stocker</title>
+  <title>LSD Heatscatter with ggplot | Beni Stocker</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -393,93 +398,428 @@
   </div>
 </nav>
 
-<div class="container">
 
-  <h1>Page not found</h1>
-  <p>Perhaps you were looking for one of these?</p>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
-  
-  <h2>Posts</h2>
-  
-  <ul>
-    <li><a href="/post/lsd/">LSD Heatscatter with ggplot</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/post/soilm_global/">Identifying drought impacts in a data-rich world</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/post/hololu/">Contrasting CO2 emissions from different Holocene land-use reconstructions: Does the carbon budget add up?</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/post/cn_experiments/">Why we need ecosystem manipulation experiments to reveal the coupled C-N system’s behaviour</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/post/fertilityquestion/">The Fertility Question: How do soil nutrients influence the carbon cycle?</a></li>
-  </ul>
-  
-  
 
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <div class="featured-image" style="background-image: url('/post/lsd/featured_hu3bec76612264c97ac8223bc952b66ab1_401185_800x0_resize_box_2.png');"></div>
   
-  
-  <h2>Publications</h2>
-  
-  <ul>
-    <li><a href="/publication/stocker-2019/">Drought impacts on terrestrial primary production underestimated by satellite monitoring</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/publication/soilm-global-code/">soilm_global: Code for Stocker et al. (2019) Nature Geosci.</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/publication/terrer-18-newphyt/">Ecosystem responses to elevated CO2 governed by plant–soil interactions and the cost of nitrogen acquisition</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/publication/wang-18-gmd/">GOLUM-CNP v1.0: a data-driven modeling of carbon, nitrogen and phosphoruscycles in major terrestrial biomes</a></li>
-  </ul>
-  
-  <ul>
-    <li><a href="/publication/soilm-global-data/">GPP: Site-scale and global model outputs from P-model used for Stocker et al. (2019) NatureGeosci.</a></li>
-  </ul>
-  
-  
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">LSD Heatscatter with ggplot</h1>
+
+        
+
+        
+
+
+<meta content="2019-05-13 23:19:08 -0700 PDT" itemprop="datePublished">
+<meta content="2019-05-13 23:19:08 -0700 PDT" itemprop="dateModified">
+
+<div class="article-metadata">
 
   
   
 
   
+  <span class="article-date">
+    
+    
+      
+    
+    <time>May 13, 2019</time>
+  </span>
   
-  <h2>Projects</h2>
+
   
-  <ul>
-    <li><a href="/project/hololu_lc6k/">Landcover6K model intercomparison</a></li>
-  </ul>
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
   
-  <ul>
-    <li><a href="/project/soilm_global/">Carbon-water coupling across scales</a></li>
-  </ul>
+
   
-  <ul>
-    <li><a href="/project/mind/">MIND</a></li>
-  </ul>
   
-  <ul>
-    <li><a href="/project/rpmodel/">rpmodel</a></li>
-  </ul>
+
   
-  <ul>
-    <li><a href="/project/sofun/">SOFUN</a></li>
-  </ul>
-  
+
   
 
 </div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=LSD%20Heatscatter%20with%20ggplot&amp;url=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f&amp;title=LSD%20Heatscatter%20with%20ggplot"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f&amp;title=LSD%20Heatscatter%20with%20ggplot"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=LSD%20Heatscatter%20with%20ggplot&amp;body=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/post/lsd/featured_hu3bec76612264c97ac8223bc952b66ab1_401185_680x500_fill_q90_box_smart1_2.png" itemprop="image" alt="">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">LSD Heatscatter with ggplot</h1>
+
+  
+
+  
+
+
+<meta content="2019-05-13 23:19:08 -0700 PDT" itemprop="datePublished">
+<meta content="2019-05-13 23:19:08 -0700 PDT" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>May 13, 2019</time>
+  </span>
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=LSD%20Heatscatter%20with%20ggplot&amp;url=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f&amp;title=LSD%20Heatscatter%20with%20ggplot"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f&amp;title=LSD%20Heatscatter%20with%20ggplot"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=LSD%20Heatscatter%20with%20ggplot&amp;body=https%3a%2f%2fstineb.github.io%2fpost%2flsd%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>I love the <a href="https://www.rdocumentation.org/packages/LSD/versions/4.0-0/topics/heatscatter" target="_blank"><code>heatscatter()</code></a> function from the <a href="https://cran.r-project.org/web/packages/LSD/index.html" target="_blank">LSD R package</a>. I&rsquo;ve even used it for my own publications (see Figs. 2 and 7 in <a href="https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.15123" target="_blank">Stocker et al. 2017</a>). Since having written this paper and creating the figures I&rsquo;ve (finally) moved to using ggplot. Unfortunately, <code>heatscatter()</code> creates a plot in base R.</p>
+
+<p>Googling, I found no satisfying solution. What is described on <a href="http://auguga.blogspot.com/2015/10/r-heat-scatter-plot.html" target="_blank">this blog</a> does&rsquo;t really do the trick.</p>
+
+<p>I tried another approach. I forked the <a href="https://github.com/stineb/LSD" target="_blank">LSD library into my github</a> and hacked an additional argument into the <code>heatscatter()</code> function as:</p>
+
+<p><code>ggplot</code> a logical: if <code>TRUE</code> uses the ggplot2 library to create plots. Defaults to <code>FALSE</code>.</p>
+
+<p>When set to <code>TRUE</code>, the function returns a ggplot object. For example the following bit of code &hellip;</p>
+
+<pre><code>gg &lt;- heatscatter(mdf$lue_mod, mdf$lue_obs, xlab = &quot;Modelled&quot;, ylab = &quot;Observed&quot;, ggplot = TRUE)
+gg + lab(title = &quot;Example&quot;)
+</code></pre>
+
+<p>&hellip; prints a simple plot, by default (and hard-coded), using ggplot&rsquo;s <code>theme_classic()</code>. This looks like this:</p>
+
+<p><img src="/img/ggplot_heatscatter_example.png" alt="" /></p>
+
+<p>That&rsquo;s it. A direct link to the hacked <code>heatscatter()</code> function is <a href="https://github.com/stineb/LSD/blob/master/R/LSD.heatscatter.R" target="_blank">here</a>.</p>
+
+<p>Credits to the halluzinogenic LSD package developer Bjoern Schwalb!</p>
+
+    </div>
+
+    
+
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/admin/avatar_hu89a8e4f442a7e39be947a8421078f325_259949_250x250_fill_q75_box_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/admin">Beni Stocker</a></h5>
+    <h6 class="card-subtitle">Postdoc</h6>
+    <p class="card-text" itemprop="description">Heliocentrist human being.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/SteniBocker" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.es/citations?user=TX7egiYAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/stineb" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://orcid.org/0000-0003-2697-9096" target="_blank" rel="noopener">
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.researchgate.net/profile/Benjamin_Stocker" target="_blank" rel="noopener">
+          <i class="ai ai-researchgate"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
 <div class="container">
   <footer class="site-footer">
   
