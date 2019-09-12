@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>E. Robinson on Beni Stocker</title>
+    <link>https://stineb.github.io/authors/e.-robinson/</link>
+    <description>Recent content in E. Robinson on Beni Stocker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://stineb.github.io/authors/e.-robinson/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development and testing of scenarios for implementing Holocene LULC in Earth System Model Experiments</title>
+      <link>https://stineb.github.io/publication/harrison-19-gmdd/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/harrison-19-gmdd/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

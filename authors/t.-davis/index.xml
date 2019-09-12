@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>T. Davis on Beni Stocker</title>
+    <link>https://stineb.github.io/authors/t.-davis/</link>
+    <description>Recent content in T. Davis on Beni Stocker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://stineb.github.io/authors/t.-davis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>P-model v1.0: An optimality-based light use efficiency model for simulating ecosystem gross primary production</title>
+      <link>https://stineb.github.io/publication/stocker-19-gmdd/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/stocker-19-gmdd/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
