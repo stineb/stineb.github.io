@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>GPP at FLUXNET Tier 1 sites from P-model</title>
+      <link>https://stineb.github.io/data_code/pmodel-output-fluxnet-2015-stocker-19-gmd/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/data_code/pmodel-output-fluxnet-2015-stocker-19-gmd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpmodel v1.0.1</title>
+      <link>https://stineb.github.io/data_code/rpmodel/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/data_code/rpmodel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>soilm_global: Code for Stocker et al. (2019) Nature Geosci.</title>
       <link>https://stineb.github.io/data_code/soilm-global-code/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
@@ -22,10 +40,19 @@
     
     <item>
       <title>GPP: Site-scale and global model outputs from P-model used for Stocker et al. (2019) NatureGeosci.</title>
-      <link>https://stineb.github.io/data_code/soilm-global-data/</link>
+      <link>https://stineb.github.io/data_code/soilm-global-output-fluxnet-2015-stocker-19-natgeo/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
-      <guid>https://stineb.github.io/data_code/soilm-global-data/</guid>
+      <guid>https://stineb.github.io/data_code/soilm-global-output-fluxnet-2015-stocker-19-natgeo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NN-FLUXNET2015</title>
+      <link>https://stineb.github.io/data_code/nn-fluxnet-2015/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/data_code/nn-fluxnet-2015/</guid>
       <description></description>
     </item>
     
@@ -39,11 +66,20 @@
     </item>
     
     <item>
-      <title>nn_fluxnet2015: Final release</title>
-      <link>https://stineb.github.io/data_code/nn-fluxnet-2015-code/</link>
+      <title>sofun: v1.1.0</title>
+      <link>https://stineb.github.io/data_code/sofun/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0100</pubDate>
       
-      <guid>https://stineb.github.io/data_code/nn-fluxnet-2015-code/</guid>
+      <guid>https://stineb.github.io/data_code/sofun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global Peatland Carbon Balance and Land Use Change CO2 Emissions Through the Holocene</title>
+      <link>https://stineb.github.io/data_code/dyptop-outputs/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/data_code/dyptop-outputs/</guid>
       <description></description>
     </item>
     

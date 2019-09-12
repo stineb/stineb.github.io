@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Helmut Haberl on Beni Stocker</title>
+    <link>https://stineb.github.io/authors/helmut-haberl/</link>
+    <description>Recent content in Helmut Haberl on Beni Stocker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://stineb.github.io/authors/helmut-haberl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agriculture,     Forestry and Other Land Use (AFOLU)</title>
+      <link>https://stineb.github.io/publication/ipcc-wg-iii/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/ipcc-wg-iii/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

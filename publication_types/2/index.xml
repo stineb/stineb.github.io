@@ -130,10 +130,28 @@
     
     <item>
       <title>Historical carbon dioxide emissions caused by land-use changes are possibly larger than assumed</title>
+      <link>https://stineb.github.io/publication/arneth-17-natgeo/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/arneth-17-natgeo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Historical carbon dioxide emissions caused by land-use changes are possibly larger than assumed</title>
       <link>https://stineb.github.io/publication/arneth-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
       <guid>https://stineb.github.io/publication/arneth-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Holocene peatland and ice-core data constraints on the timing and magnitude of CO2 emissions from past land use</title>
+      <link>https://stineb.github.io/publication/stocker-17-pnas/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/stocker-17-pnas/</guid>
       <description></description>
     </item>
     
@@ -166,10 +184,28 @@
     
     <item>
       <title>Response to Comment on “Mycorrhizal association as a primary control of the CO2 fertilization effect”</title>
+      <link>https://stineb.github.io/publication/terrer-17-sci/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/terrer-17-sci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Response to Comment on “Mycorrhizal association as a primary control of the CO2 fertilization effect”</title>
       <link>https://stineb.github.io/publication/terrer-358/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
       
       <guid>https://stineb.github.io/publication/terrer-358/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simple process-led algorithms for simulating habitats (SPLASH v.1.0): robust indices of radiation, evapotranspiration and plant-available moisture</title>
+      <link>https://stineb.github.io/publication/davis-17-gmd/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/davis-17-gmd/</guid>
       <description></description>
     </item>
     
@@ -220,10 +256,10 @@
     
     <item>
       <title>Role of CO2, climate and land use in regulating the seasonal amplitude increase of carbon fluxes in terrestrial ecosystems: a multimodel analysis</title>
-      <link>https://stineb.github.io/publication/bg-13-5121-2016/</link>
+      <link>https://stineb.github.io/publication/zhao-16-bg/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
       
-      <guid>https://stineb.github.io/publication/bg-13-5121-2016/</guid>
+      <guid>https://stineb.github.io/publication/zhao-16-bg/</guid>
       <description></description>
     </item>
     
@@ -265,19 +301,19 @@
     
     <item>
       <title>Audit of the global carbon budget: estimate errors and their impact on uptake uncertainty</title>
-      <link>https://stineb.github.io/publication/bg-12-2565-2015/</link>
+      <link>https://stineb.github.io/publication/ballantyne-15-bg/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
       
-      <guid>https://stineb.github.io/publication/bg-12-2565-2015/</guid>
+      <guid>https://stineb.github.io/publication/ballantyne-15-bg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Effects of global change during the 21st century on the nitrogen cycle</title>
-      <link>https://stineb.github.io/publication/acp-15-13849-2015/</link>
+      <link>https://stineb.github.io/publication/fowler-15-acp/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
       
-      <guid>https://stineb.github.io/publication/acp-15-13849-2015/</guid>
+      <guid>https://stineb.github.io/publication/fowler-15-acp/</guid>
       <description></description>
     </item>
     
@@ -310,10 +346,10 @@
     
     <item>
       <title>Quantifying differences in land use emission estimates implied by definition discrepancies</title>
-      <link>https://stineb.github.io/publication/esd-6-731-2015/</link>
+      <link>https://stineb.github.io/publication/stocker-15-esd/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
       
-      <guid>https://stineb.github.io/publication/esd-6-731-2015/</guid>
+      <guid>https://stineb.github.io/publication/stocker-15-esd/</guid>
       <description></description>
     </item>
     
@@ -382,6 +418,15 @@
     
     <item>
       <title>Multiple greenhouse-gas feedbacks from the land biosphere under future climate change scenarios</title>
+      <link>https://stineb.github.io/publication/stocker-13-natcc/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/stocker-13-natcc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiple greenhouse-gas feedbacks from the land biosphere under future climate change scenarios</title>
       <link>https://stineb.github.io/publication/stocker-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0100</pubDate>
       
@@ -391,19 +436,28 @@
     
     <item>
       <title>The global carbon budget 1959-2011</title>
-      <link>https://stineb.github.io/publication/essd-5-165-2013/</link>
+      <link>https://stineb.github.io/publication/lequere-13-essd/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0100</pubDate>
       
-      <guid>https://stineb.github.io/publication/essd-5-165-2013/</guid>
+      <guid>https://stineb.github.io/publication/lequere-13-essd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Transient simulations of the carbon and nitrogen dynamics in northern peatlands: from the Last Glacial Maximum to the 21st century</title>
-      <link>https://stineb.github.io/publication/cp-9-1287-2013/</link>
+      <link>https://stineb.github.io/publication/spahni-13-cp/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0100</pubDate>
       
-      <guid>https://stineb.github.io/publication/cp-9-1287-2013/</guid>
+      <guid>https://stineb.github.io/publication/spahni-13-cp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sensitivity of Holocene atmospheric CO$_2$ and the modern carbon budget to early human land use: analyses with a process-based model</title>
+      <link>https://stineb.github.io/publication/stocker-11-bg/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/stocker-11-bg/</guid>
       <description></description>
     </item>
     
