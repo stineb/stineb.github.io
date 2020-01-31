@@ -10,6 +10,36 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>MSc thesis: Cold acclimation effects on photosynthesis</title>
+      <link>https://stineb.github.io/project/photocold/</link>
+      <pubDate>Fri, 31 Jan 2020 11:36:26 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/project/photocold/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;You will investigate the apparent depression of photosynthesis rates in temperate and boreal forests in spring and after cold winters - a phenomenon that has been overlooked in global models. By combining remote sensing data, eddy covariance flux measurements, and modelling, you will find new solutions to an important challenge.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ecosystem-level photosynthesis (gross primary production: GPP) can be predicted using remotely sensed information on vegetation cover, local measurements of solar radiation and relatively simple models for the efficiency of photosynthesis (Ryu et al., 2019; Stocker et al., 2019). But one aspect of model-data mismatch stands out: The early-season increase in GPP is typically simulated to be around a month too early at some sites but not at others (Fig. 1). It will be your challenge to find out why and how to resolve this model deficiency.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://stineb.github.io/img/photocold.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Fig. 1 Mean seasonal cycle of GPP aggregated for 14 sites where without early season overestimation of modelled GPP (a) and 13 sites with an apparent overestimation of early season modelled GPP (b).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A hypothesis that may explain this phenomenon is that the photosynthetic apparatus is acclimated to the risk of frost damage in early spring, caused by conditions of low temperature and simultaneously high solar radiation. To prevent excessive light harvesting, photoprotective mechanisms are deployed by plants and lead to reduced photosynthetic carbon assimilation, and hence GPP. At locations with relatively mild winters and limited risk of frost, photoprotection may be less prevalent and photosynthesis rates are high already in the early season.&lt;/p&gt;
+
+&lt;p&gt;It will be your task to test this hypothesis. You will implement simple representations of cold-induced reduction of photosynthesis in our model in combination with remotely sensed vegetation cover and test revised predictions against a globally distributed set of site-level GPP measurements (eddy covariance). Your work will set the basis for extending this analysis using local multi-spectral imaging and identifying patterns between reflection data, the apparent GPP depression, and the light and temperature environment in the early season.&lt;/p&gt;
+
+&lt;p&gt;This thesis is a great starting point for working with large datasets of the terrestrial biosphere and modelling. Experience with working with R, Python or other data science tools are an advantage. You may start as soon as you like. Please contact me directly if you&amp;rsquo;re interested: Prof. Benjamin Stocker, bestocke@ethz.ch&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/stineb/photocold&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;https://rpubs.com/stineb/photocold&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/stineb/photocold&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;https://github.com/stineb/photocold&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>LSD Heatscatter with ggplot</title>
       <link>https://stineb.github.io/post/lsd/</link>
       <pubDate>Mon, 13 May 2019 23:19:08 -0700</pubDate>
@@ -254,15 +284,6 @@ gg + lab(title = &amp;quot;Example&amp;quot;)
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://stineb.github.io/publication/pmodel-output-fluxnet-2015-stocker-19-gmd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Monitoring Spatial and Temporal Variabilities of Gross Primary Production Using MAIAC MODIS Data</title>
-      <link>https://stineb.github.io/publication/fernandezmartinez-19-rs/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://stineb.github.io/publication/fernandezmartinez-19-rs/</guid>
       <description></description>
     </item>
     
