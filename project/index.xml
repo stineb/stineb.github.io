@@ -6,10 +6,20 @@
     <description>Recent content in Projects on Beni Stocker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jan 2020 11:36:26 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 09:36:01 +0100</lastBuildDate>
     
 	<atom:link href="https://stineb.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New constraints on terrestrial photosynthesis</title>
+      <link>https://stineb.github.io/project/terrphoto/</link>
+      <pubDate>Tue, 11 Feb 2020 09:36:01 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/project/terrphoto/</guid>
+      <description>Photosynthesis of the terrestrial biosphere drives the land carbon cycle. For example, year-to-year variations in terrestrial photosynthesis are the dominant cause for year-to-year changes in land carbon uptake and the rate of increase in atmospheric CO2. Understanding terrestrial photosynthesis is thus important for understanding the fate of anthropogenic CO2 emissions and their effect on driving climate change.
+Unfortunately, terrestrial photosynthesis cannot be measured directly. Most available estimates are based on remote sensing observations of the vegetation cover, combined with models for the efficiency by which absorbed light is used for carbon assimilation.</description>
+    </item>
     
     <item>
       <title>MSc thesis: Cold acclimation effects on photosynthesis</title>
