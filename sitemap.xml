@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>https://stineb.github.io/project/rootingdepth/</loc>
+      <lastmod>2020-05-20T16:44:53+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/franklin-20-natplants/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/project/terrphoto/</loc>
       <lastmod>2020-02-11T09:36:01+01:00</lastmod>
     </url>
@@ -14,6 +30,30 @@
     
       <loc>https://stineb.github.io/project/photocold/</loc>
       <lastmod>2020-01-31T11:36:26+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/harrison-20-gmd/</loc>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/stocker-20-gmd/</loc>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/yu-19-arxiv/</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -84,7 +124,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/project/rpmodel/</loc>
+      <loc>https://stineb.github.io/data_code/pmodel_fluxnet2015/</loc>
       <lastmod>2019-01-31T19:19:32+01:00</lastmod>
     </url>
     
@@ -92,7 +132,23 @@
     
     <url>
     
-      <loc>https://stineb.github.io/project/sofun/</loc>
+      <loc>https://stineb.github.io/data_code/ingestr/</loc>
+      <lastmod>2019-01-31T19:19:32+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/data_code/rpmodel/</loc>
+      <lastmod>2019-01-31T19:19:32+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/data_code/sofun/</loc>
       <lastmod>2019-01-31T19:19:29+01:00</lastmod>
     </url>
     
@@ -100,7 +156,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/project/rsofun/</loc>
+      <loc>https://stineb.github.io/data_code/rsofun/</loc>
       <lastmod>2019-01-31T19:19:24+01:00</lastmod>
     </url>
     
@@ -132,7 +188,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/pmodel-output-fluxnet-2015-stocker-19-gmd/</loc>
+      <loc>https://stineb.github.io/data_code_old/pmodel-output-fluxnet-2015-stocker-19-gmd/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -172,6 +228,22 @@
     
     <url>
     
+      <loc>https://stineb.github.io/publication/fischer-19-bg/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/publication/terrer-19-natcc/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/publication/terrer-19/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
     </url>
@@ -188,7 +260,15 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/rpmodel/</loc>
+      <loc>https://stineb.github.io/publication/peaucelle-19-natcomm/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/data_code_old/rpmodel/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -204,7 +284,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/soilm-global-code/</loc>
+      <loc>https://stineb.github.io/data_code_old/soilm-global-code/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -236,7 +316,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/soilm-global-output-fluxnet-2015-stocker-19-natgeo/</loc>
+      <loc>https://stineb.github.io/data_code_old/soilm-global-output-fluxnet-2015-stocker-19-natgeo/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -260,7 +340,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/nn-fluxnet-2015/</loc>
+      <loc>https://stineb.github.io/data_code_old/nn-fluxnet-2015/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -292,7 +372,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/flue/</loc>
+      <loc>https://stineb.github.io/data_code_old/flue/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -308,7 +388,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/sofun/</loc>
+      <loc>https://stineb.github.io/data_code_old/sofun/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -332,7 +412,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/dyptop-outputs/</loc>
+      <loc>https://stineb.github.io/data_code_old/dyptop-outputs/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -396,7 +476,7 @@
     
     <url>
     
-      <loc>https://stineb.github.io/data_code/</loc>
+      <loc>https://stineb.github.io/data_code_old/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -766,7 +846,7 @@
     <url>
     
       <loc>https://stineb.github.io/publication_types/2/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -892,7 +972,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/a.-dawson/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1143,6 +1223,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/adri%C3%A0-descals-ferrando/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/akihiko-ito/</loc>
       <lastmod>2016-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -1269,6 +1358,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/annikki-m%C3%A4kel%C3%A4/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/atul-k-jain/</loc>
       <lastmod>2016-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -1314,7 +1412,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/b.-d.-stocker/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1431,7 +1529,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/benjamin-d-stocker/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1440,7 +1538,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/benjamin-d.-stocker/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1718,6 +1816,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/caroline-e.-farrior/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/caspar-j.-van-lissa/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -1737,6 +1844,15 @@
     
       <loc>https://stineb.github.io/authors/catherine-preece/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/cesar-terrer/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1818,6 +1934,15 @@
     
       <loc>https://stineb.github.io/authors/christoph-m%C3%BCller/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/christoph-nehrbass-ahles/</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1943,7 +2068,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/d.-sandoval/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2014,6 +2139,24 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/daniel-falster/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/data_code/</loc>
+      <lastmod>2019-01-31T19:19:32+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/david-c.-frank/</loc>
       <lastmod>2010-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -2051,7 +2194,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/e.-fluet-chouinard/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2114,7 +2257,25 @@
     <url>
     
       <loc>https://stineb.github.io/authors/e.-robinson/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/ehud-meron/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/elena-rovenskaya/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2213,7 +2374,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/f.-s.-r.-pausata/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2239,8 +2400,17 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/florian-hofhansl/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/fortunat-joos/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2419,6 +2589,24 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/gustaf-hugelius/</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/guy-midgley/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/guy-schurgers/</loc>
       <lastmod>2015-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -2456,7 +2644,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/h.-wang/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2474,7 +2662,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/han-wang/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2545,6 +2733,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/hubertus-fischer/</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/hui-yang/</loc>
       <lastmod>2016-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -2555,7 +2752,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/i.-c.-prentice/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2564,7 +2761,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/i.-colin-prentice/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -2644,6 +2841,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/ian-j.-wright/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/ian-mccallum/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -2663,6 +2869,15 @@
     <url>
     
       <loc>https://stineb.github.io/authors/iolanda-filella/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/ivan-a.-janssens/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
@@ -2843,7 +3058,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/j.-o.-kaplan/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3131,7 +3346,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/josep-pe%C3%B1uelas/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3150,6 +3365,15 @@
     
       <loc>https://stineb.github.io/authors/julia-nabel/</loc>
       <lastmod>2016-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/julie-loisel/</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3185,7 +3409,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/k.-d.-morrison/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3194,7 +3418,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/k.-klein-goldewijk/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3230,7 +3454,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/karin-t.-rebel/</loc>
-      <lastmod>2016-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3536,7 +3760,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/m.-madella/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3626,7 +3850,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/m.-vander-linden/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3653,7 +3877,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/m.-j.-gaillard/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3698,7 +3922,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/marc-peaucelle/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3708,6 +3932,15 @@
     
       <loc>https://stineb.github.io/authors/marcel-r.-hoosbeek/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/marcel-van-oijen/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3859,6 +4092,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/michel-loreau/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/mireia-bartrons/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -3887,7 +4129,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/n.-g.-smith/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3896,7 +4138,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/n.-j.-whitehouse/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -3968,7 +4210,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/nadejda-a.-soudzilovskaia/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4004,7 +4246,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/o.-boles/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4049,7 +4291,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/oskar-franklin/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4094,7 +4336,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/p.-braconnot/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4210,6 +4452,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/peter-m.-van-bodegom/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/pe%C3%B1uelas-josep/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -4229,7 +4480,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/philippe-ciais/</loc>
-      <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4265,7 +4516,7 @@
     <url>
     
       <loc>https://stineb.github.io/project/</loc>
-      <lastmod>2020-02-11T09:36:01+01:00</lastmod>
+      <lastmod>2020-05-20T16:44:53+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4606,8 +4857,26 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/roberto-molowny-horas/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/robledo-carmenza-abad/</loc>
       <lastmod>2015-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/roderick-dewar/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4760,7 +5029,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/s.-p.-harrison/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -4860,6 +5129,15 @@
     
       <loc>https://stineb.github.io/authors/sabina-dore/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/sandy-p.-harrison/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5002,8 +5280,26 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/stanislaus-j.-schymanski/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/stefano-manzoni/</loc>
-      <lastmod>2016-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/stephan-pietsch/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5021,7 +5317,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/s%C3%B6nke-zaehle/</loc>
-      <lastmod>2016-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5066,7 +5362,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/t.-davis/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5075,7 +5371,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/t.-f.-keenan/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5129,7 +5425,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/t.-kastner/</loc>
-      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5218,6 +5514,24 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/thomas-k-bauska/</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/thomas-kleinen/</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/thomas-kolb/</loc>
       <lastmod>2019-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -5290,6 +5604,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/ulf-dieckmann/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/v.-avitabile/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -5346,6 +5669,15 @@
     
       <loc>https://stineb.github.io/authors/valerie-trouet/</loc>
       <lastmod>2010-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/victor-brovkin/</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5417,7 +5749,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/wolfgang-cramer/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5641,6 +5973,15 @@
     
     <url>
     
+      <loc>https://stineb.github.io/authors/yongshuo-h.-fu/</loc>
+      <lastmod>2019-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://stineb.github.io/authors/yongwen-liu/</loc>
       <lastmod>2016-01-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -5732,7 +6073,7 @@
     <url>
     
       <loc>https://stineb.github.io/authors/zicheng-yu/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5760,6 +6101,15 @@
     
       <loc>https://stineb.github.io/tags/eddy-covariance/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/et-al./</loc>
+      <lastmod>2019-12-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -5850,6 +6200,15 @@
     
       <loc>https://stineb.github.io/tags/vapour-pressure-deficit-vpd/</loc>
       <lastmod>2018-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://stineb.github.io/authors/%C3%A5ke-br%C3%A4nnstr%C3%B6m/</loc>
+      <lastmod>2020-05-01T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     

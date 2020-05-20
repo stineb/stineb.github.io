@@ -6,10 +6,46 @@
     <description>Recent content in 2 on Beni Stocker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://stineb.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Organizing principles for vegetation dynamics</title>
+      <link>https://stineb.github.io/publication/franklin-20-natplants/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://stineb.github.io/publication/franklin-20-natplants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development and testing scenarios for implementing land use and land cover changes during the Holocene in Earth system model experiments</title>
+      <link>https://stineb.github.io/publication/harrison-20-gmd/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/harrison-20-gmd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>P-model v1.0: an optimality-based light use efficiency model for simulating ecosystem gross primary production</title>
+      <link>https://stineb.github.io/publication/stocker-20-gmd/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/stocker-20-gmd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>No support for carbon storage of more than 1000 GtC in northern peatlands</title>
+      <link>https://stineb.github.io/publication/yu-19-arxiv/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/yu-19-arxiv/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Development and testing of scenarios for implementing Holocene LULC in Earth System Model Experiments</title>
@@ -66,6 +102,24 @@
     </item>
     
     <item>
+      <title>N2O changes from the Last Glacial Maximum to the preindustrial -- Part 1: Quantitative reconstruction of terrestrial and marine emissions using N2O stable isotopes in ice cores</title>
+      <link>https://stineb.github.io/publication/fischer-19-bg/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/fischer-19-bg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nitrogen and phosphorus constrain the CO2 fertilization of global plant biomass</title>
+      <link>https://stineb.github.io/publication/terrer-19-natcc/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/terrer-19-natcc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Nitrogen and phosphorus constrain the CO2 fertilization of global plant biomass</title>
       <link>https://stineb.github.io/publication/terrer-19/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
@@ -80,6 +134,15 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
       
       <guid>https://stineb.github.io/publication/stocker-19-gmdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial variance of spring phenology in temperate deciduous forests is constrained by background climatic conditions</title>
+      <link>https://stineb.github.io/publication/peaucelle-19-natcomm/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://stineb.github.io/publication/peaucelle-19-natcomm/</guid>
       <description></description>
     </item>
     

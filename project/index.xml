@@ -6,10 +6,22 @@
     <description>Recent content in Projects on Beni Stocker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2020 09:36:01 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 16:44:53 +0200</lastBuildDate>
     
 	<atom:link href="https://stineb.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Predicting rooting depth</title>
+      <link>https://stineb.github.io/project/rootingdepth/</link>
+      <pubDate>Wed, 20 May 2020 16:44:53 +0200</pubDate>
+      
+      <guid>https://stineb.github.io/project/rootingdepth/</guid>
+      <description>This is ongoing research. I held the following presentation at EGU 2020:
+Global climate controls on the plant rooting depth Benjamin D. Stocker Shersingh J. Tumber-Dávila, and Robert B. Jackson
+Link to presentation (video)
+Abstract Rooting depth governs plants&amp;rsquo; access to water during dry (rain-free) periods and is thus a key variable determining the sensitivity of transpiration and carbon assimilation to soil moisture drought and land-climate coupling during drought and heat events.</description>
+    </item>
     
     <item>
       <title>New constraints on terrestrial photosynthesis</title>
@@ -22,7 +34,7 @@ Unfortunately, terrestrial photosynthesis cannot be measured directly. Most avai
     </item>
     
     <item>
-      <title>MSc thesis: Cold acclimation effects on photosynthesis</title>
+      <title>Cold acclimation effects on photosynthesis</title>
       <link>https://stineb.github.io/project/photocold/</link>
       <pubDate>Fri, 31 Jan 2020 11:36:26 +0100</pubDate>
       
@@ -56,33 +68,6 @@ What are the implications of this bias for our understanding of the terrestrial 
       <pubDate>Thu, 31 Jan 2019 19:19:32 +0100</pubDate>
       
       <guid>https://stineb.github.io/project/mind/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rpmodel</title>
-      <link>https://stineb.github.io/project/rpmodel/</link>
-      <pubDate>Thu, 31 Jan 2019 19:19:32 +0100</pubDate>
-      
-      <guid>https://stineb.github.io/project/rpmodel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SOFUN</title>
-      <link>https://stineb.github.io/project/sofun/</link>
-      <pubDate>Thu, 31 Jan 2019 19:19:29 +0100</pubDate>
-      
-      <guid>https://stineb.github.io/project/sofun/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rsofun</title>
-      <link>https://stineb.github.io/project/rsofun/</link>
-      <pubDate>Thu, 31 Jan 2019 19:19:24 +0100</pubDate>
-      
-      <guid>https://stineb.github.io/project/rsofun/</guid>
       <description></description>
     </item>
     
